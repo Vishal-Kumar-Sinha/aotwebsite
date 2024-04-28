@@ -1,4 +1,4 @@
-export const links = [
+export const melinks = [
     {
       name: "Home",
       submenu: false,

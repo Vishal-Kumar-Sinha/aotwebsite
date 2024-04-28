@@ -51,15 +51,15 @@ export const links = [
         {
           Head: "Resources",
           sublink: [
-            { name: "Library", link: "/", target: "" },
+            { name: "Library", link: "/library", target: "" },
             { name: "Moodle", link: "http://182.74.215.198/moodle/", target: "_blank" },
           ],
         },
         {
           Head: "Admissions",
           sublink: [
-            { name: "UG Admission", link: "/", target: "" },
-            { name: "PG Admission", link: "/", target: "" },
+            { name: "UG Admission", link: "/admissionug", target: "" },
+            { name: "PG Admission", link: "/admissionpg", target: "" },
           ],
         },
       ],
@@ -68,27 +68,27 @@ export const links = [
       name: "Research",
       submenu: false,
       sublinks: [
-        { name: "Current Research", link: "/" },
-        { name: "Past Research", link: "/" },
-        { name: "Research Facilities", link: "/" },
+        { name: "Current Research", link: "/research" },
+        { name: "Past Research", link: "/research#past-research" },
+        { name: "Research Facilities", link: "/research#research-facilities" },
       ],
     },
     {
       name: "Student",
       submenu: false,
       sublinks: [
-        { name: "Life@AOT", link: "/" },
-        { name: "Campus Facilities", link: "/" },
-        { name: "Career Services", link: "/" },
-        { name: "Events", link: "/" },
+        { name: "Life@AOT", link: "/student" },
+        { name: "Campus Facilities", link: "/campus" },
+        { name: "Career Services", link: "/talent" },
+        { name: "Events", link: "/events" },
       ],
     },
     {
       name: "Faculty",
       submenu: false,
       sublinks: [
-        { name: "Faculty List", link: "/" },
-        { name: "Career@AOT", link: "/" },
+        { name: "Faculty List", link: "/faculty" },
+        { name: "Career@AOT", link: "/career" },
       ],
     },
   ];

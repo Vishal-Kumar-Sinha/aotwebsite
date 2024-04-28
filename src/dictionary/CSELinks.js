@@ -1,4 +1,4 @@
-export const links = [
+export const cselinks = [
   {
     name: "Home",
     submenu: false,
@@ -9,27 +9,24 @@ export const links = [
     name: "People",
     submenu: true,
     sublinks: [
-      { name: "Faculty Members", href: "/" },
-      { name: "Staff Members", href: "/" },
+      { name: "Faculty Members", href: "/department/cse#faculty" },
+      { name: "Staff Members", href: "/department/cse#staff" },
     ],
   },
   {
     name: "Students",
     submenu: true,
     sublinks: [
-      { name: "Placement", href: "/" },
-      { name: "Student Activities", href: "/" },
-      { name: "Life@AOT_Dept", href: "/" },
-      { name: " Departmental Newsletter", href: "/" },
+      { name: "Placement", href: "/department/cse#placements" },
+      { name: "Student Activities", href: "/department/cse#activities" },
+      { name: "Life@AOT_Dept", href: "/department/cse#infrastructure" },
+      { name: "Departmental Newsletter", href: "/department/cse#newsletter" },
     ],
   },
   {
     name: "Academics",
-    submenu: true,
-    sublinks: [
-      { name: "UG", href: "/" },
-      { name: "PG", href: "/" },
-    ],
+    submenu: false,
+    href: "/department/cse#academics",
   },
   {
     name: "Research",
@@ -44,11 +41,30 @@ export const links = [
   {
     name: "Join Us",
     submenu: false,
-    href: "/" ,
+    href: "/career" ,
   },
   {
     name: "Contact",
     submenu: false,
-    href: "/" ,
+    href: "/contacts" ,
+  },
+];
+
+export const csephotos = [
+  {
+    title: "Active participation",
+    imgUrl: "/communities/campus/c1.jpg",
+  },
+  {
+    title: "Active participation",
+    imgUrl: "/communities/campus/c2.jpg",
+  },
+  {
+    title: "Active participation",
+    imgUrl: "/communities/campus/c3.jpg",
+  },
+  {
+    title: "Active participation",
+    imgUrl: "/communities/campus/c1.jpg",
   },
 ];

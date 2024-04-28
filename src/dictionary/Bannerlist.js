@@ -4,6 +4,10 @@ import * as React from "react";
 import h1 from "@/assets/images/aot/p1.jpg";
 import h2 from "@/assets/images/aot/p2.jpg";
 import h3 from "@/assets/images/aot/p3.jpg";
+//library
+import library1 from "@/assets/images/library/p1.jpg";
+import library2 from "@/assets/images/library/p2.jpg";
+import library3 from "@/assets/images/library/p3.jpg";
 //cse
 import cse1 from "@/assets/images/departments/cse/p1.jpg";
 import cse2 from "@/assets/images/departments/cse/p2.jpg";
@@ -66,6 +70,60 @@ export const homebanner = [
     imageUrl: h3,
     title: "Double Nuke Burger",
     subtitle: "sinha",
+  },
+];
+//career banner
+export const careerbanner = [
+  {
+    imageUrl: h1,
+    title: "Double Nuke ",
+    subtitle: "vishal",
+  },
+  {
+    imageUrl: h2,
+    title: "Double Nuke Burger",
+    subtitle: "kumar",
+  },
+  {
+    imageUrl: h3,
+    title: "Double Nuke Burger",
+    subtitle: "sinha",
+  },
+];
+//faculty banner
+export const facultybanner = [
+  {
+    imageUrl: h1,
+    title: "Double Nuke ",
+    subtitle: "vishal",
+  },
+  {
+    imageUrl: h2,
+    title: "Double Nuke Burger",
+    subtitle: "kumar",
+  },
+  {
+    imageUrl: h3,
+    title: "Double Nuke Burger",
+    subtitle: "sinha",
+  },
+];
+
+export const librarybanner = [
+  {
+    imageUrl: library1,
+    title: "Central Library",
+    subtitle: "AOT",
+  },
+  {
+    imageUrl: library3,
+    title: "Academy Of Technology",
+    subtitle: "...translate vision into reality",
+  },
+  {
+    imageUrl: library2,
+    title: "Digital Library",
+    subtitle: "AOT",
   },
 ];
 

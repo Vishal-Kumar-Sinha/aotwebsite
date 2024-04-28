@@ -1,4 +1,4 @@
-export const links = [
+export const csbslinks = [
     {
       name: "Home",
       submenu: false,

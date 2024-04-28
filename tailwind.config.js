@@ -20,6 +20,20 @@ module.exports = {
             transform: 'rotateY(359deg) rotateX(359deg)'
           }
         },
+        blob: {
+          "0": {
+            transform: "translate(0px, 0px) scale(0.9)"
+          },
+          "33%": {
+            transform: "translate(20px, -40px) scale(1.1)"
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.7)"
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(0.9)"
+          },
+        },
         
       },
       fontFamily: {
@@ -41,23 +55,33 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 8s linear infinite',
         'spinner-cube': 'spinner 10s linear infinite',
+        'blob': 'blob 10s infinite',
       },
     },
     boxShadow: {
       'outside-shadow': "6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7)",
       'inside-shadow': "inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05)",
-      //'cube-shadow': "0px 0px 52px rgba(0,0,0,0.9)",
       'cube-shadow': "0px 0px 52px #59f",
+      'news-shadow': "0 -2px 12px rgba(0,0,0,0.3)",
     },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
+
+      footerxl: { max: "1439px" },
+      // => @media (max-width: 1439px) { ... }
+
+      footerxll: { min: "1439px" },
+      // => @media (min-width: 1439px) { ... }
   
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
 
       gxl: { max: "1139px" },
-      // => @media (max-width: 1279px) { ... }
+      // => @media (max-width: 113px) { ... }
+
+      ggxl: { min: "1139px" },
+      // => @media (min-width: 1139px) { ... }
 
       xll: { min: "1279px" },
       // => @media (min-width: 1279px) { ... }
@@ -77,6 +101,9 @@ module.exports = {
       smmy: { max: "685px" },
       // => @media (max-width: 685px) { ... }
 
+      smy: { min: "685px" },
+      // => @media (min-width: 685px) { ... }
+
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
 
@@ -84,6 +111,9 @@ module.exports = {
       // => @media (min-width: 639px) { ... }
   
       xs: { max: "479px" },
+      // => @media (max-width: 479px) { ... }
+
+      xss: { max: "400px" },
       // => @media (max-width: 479px) { ... }
 
       xxs: { max: "300px" },
@@ -94,52 +124,6 @@ module.exports = {
     require('tailwindcss-3d')({ legacy: true }),
     plugin(function({ addUtilities }) {
       const newUtilities = {
-        '.circular-progress': {
-            'fill': 'none',
-            'stroke-width': '18px',
-            'stroke-dasharray': '472',
-            'stroke-dashoffset': '100',
-        },
-        '.ifcs': {
-          'background-position': 'center',
-          'background-size': 'cover',
-          'opacity': '1',
-          'box-shadow': '0px 0px 0px #fff',
-        },
-        '.ifc': {
-          'transform': 'translate3d(0,0,0px)',
-        },
-        '.ifc2': {
-          'transform': 'rotateY(90deg) translate3d(0,0,0px)',
-        },
-        '.ifc3': {
-          'transform': 'rotateX(90deg) translate3d(0,0,0px)',
-        },
-        '.front': {
-          'transform': 'translate3d(0,0,40px)',
-          'transition': '2s',
-        },
-        '.back': {
-          'transform': 'rotateY(180deg) translate3d(0,0,40px)',
-        },
-        '.left': {
-          'transform': 'rotateY(-90deg) translate3d(0,0,40px)',
-        },
-        '.right': {
-          'transform': 'rotateY(90deg) translate3d(0,0,40px)',
-        },
-        '.top': {
-          'transform': 'rotateX(90deg) translate3d(0,0,40px)',
-        },
-        '.bottom': {
-          'transform': 'rotateX(-90deg) translate3d(0,0,40px)',
-        },
-        '.str-dasharray': {
-          'stroke-dasharray': '472',
-        },
-        '.str-dashoffset': {
-          'stroke-dashoffset': '300',
-        },
         '.cls-1': {
           'fill':'hsl(232,47%,28%)',
           'stroke-width': '0px',
@@ -170,6 +154,29 @@ module.exports = {
         },
         '*': {
         'box-sizing': 'border-box',
+        },
+        '.scrlbr::-webkit-scrollbar': {
+          'width': '10px',
+        },
+        '.scrlbr::-webkit-scrollbar-track': {
+          'background': '#fff',
+          'border-radius': '10px',
+          'box-shadow': 'inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05)',
+        },
+        '.scrlbr::-webkit-scrollbar-thumb': {
+          'background-color': 'rgb(241,48,36)',
+          'border-radius': '10px',
+          'border': '3px solid white',
+          'box-shadow': 'inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05)',
+        },
+        '.slide3d': {
+          'transform':'scale(0.2)',// rotateY(35deg) translateX(-100%)
+          'transition':'transform 300ms',
+          'opacity':'0.5',
+        },
+        '.activeSlide3d': {
+          'transform':'scale(1.1)',
+          'opacity':'1',
         },
       }
       addUtilities(newUtilities, ['responsive'])

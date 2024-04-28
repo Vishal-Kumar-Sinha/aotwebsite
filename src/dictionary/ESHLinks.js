@@ -1,4 +1,4 @@
-export const links = [
+export const eshlinks = [
     {
       name: "Home",
       submenu: false,

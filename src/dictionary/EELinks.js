@@ -1,4 +1,4 @@
-export const links = [
+export const eelinks = [
     {
       name: "Home",
       submenu: false,

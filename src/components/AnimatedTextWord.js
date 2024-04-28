@@ -36,29 +36,29 @@ const AnimatedTextWord = ({ text, className }) => {
   };
 
   return (
-    <div className="w-full mx-autoflex items-center justify-center text-center overflow-hidden">
-        <motion.div
-          className={`inline-block w-full ${className}`}
-          style={{
-            overflow: "hidden",
-            display: "inline-block",
-            fontSize: "2rem",
-          }}
-          variants={container}
-          initial="hidden"
-          animate="visible"
-        >
-          {words.map((word, index) => (
-            <motion.span
-              className="inline-block"
-              variants={child}
-              style={{ marginRight: "5px" }}
-              key={index}
-            >
-              {word}
-            </motion.span>
-          ))}
-        </motion.div>
+    <div className="w-full mx-autoflex items-start text-left overflow-hidden">
+      <motion.div
+        className={`inline-block w-full ${className}`}
+        style={{
+          overflow: "hidden",
+          display: "inline-block",
+          fontSize: "2rem",
+        }}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {words.map((word, index) => (
+          <motion.span
+            className="inline-block"
+            variants={child}
+            style={{ marginRight: "5px" }}
+            key={index}
+          >
+            {word}
+          </motion.span>
+        ))}
+      </motion.div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-export const links = [
+export const balinks = [
     {
       name: "Home",
       submenu: false,

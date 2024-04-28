@@ -12,8 +12,8 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState("");
   return (
     <>
-      {links.map((link) => (
-        <div key={link.name}>
+      {links.map((link, index) => (
+        <div key={index}>
           <div className="group inline-block lg:hidden">
             <button
               aria-haspopup="true"
@@ -34,8 +34,8 @@ const NavLinks = () => {
                 <div className="mb-2">
                   <div className="w-4 h-4 left-3 absolute -mt-2 bg-white rotate-45"></div>
                 </div>
-                {link.sublinks.map((mysublinks) => (
-                  <li key={mysublinks.Head} className="rounded-sm relative nvli head px-3 py-1">
+                {link.sublinks.map((mysublinks, indexinner1) => (
+                  <li key={indexinner1} className="rounded-sm relative nvli head px-3 py-1">
                     <button
                       aria-haspopup="true"
                       aria-controls="menu-lang"

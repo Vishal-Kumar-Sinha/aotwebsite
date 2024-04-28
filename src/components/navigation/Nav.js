@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 import NavLinks from "./NavLinks";
-import { FaXmark, FaBars, FaSun, FaMagnifyingGlass } from "react-icons/fa6";
+import { FaXmark, FaBars, FaMagnifyingGlass } from "react-icons/fa6";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);

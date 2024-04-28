@@ -20,7 +20,7 @@ const Deptnav = ({links}) => {
           </div>
           <div className="text-2xl md:text-2xl flex xs:gap-14 md:gap-10 gap-20 smm:pl-2 pl-6 items-center pr-3 justify-between xll:hidden">
           <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
-            <FaSun />
+            {/* <FaSun /> */}
             <div onClick={() => setOpen(!open)}>
               {open ? <FaXmark /> : <FaBars />}
             </div>
@@ -29,7 +29,7 @@ const Deptnav = ({links}) => {
         <ul className="xll:flex hidden items-center gap-10">
         <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
           <Deptlinks links={links} />
-          <FaSun />
+          {/* <FaSun /> */}
         </ul>
         {/* Mobile nav */}
         <ul

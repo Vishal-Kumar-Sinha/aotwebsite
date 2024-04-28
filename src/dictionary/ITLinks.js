@@ -1,4 +1,4 @@
-export const links = [
+export const itlinks = [
     {
       name: "Home",
       submenu: false,

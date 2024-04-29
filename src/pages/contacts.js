@@ -13,7 +13,7 @@ const contacts = () => {
         <title>Contacts Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full sm:mb-16 flex flex-col items-center justify-center">
+      <main className="w-full sm:mb-16 flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
         <Layout className="!pt-8">
           <div className=" pb-6">
             <AnimatedText text="Get In Touch" className="!text-4xl !text-accent" />

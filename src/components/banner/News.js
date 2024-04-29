@@ -4,7 +4,7 @@ import Newscard from "./Newscard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const News = ({props}) => {
+const News = ({props, newsview}) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -100,7 +100,7 @@ const News = ({props}) => {
       <Slider {...settings}>
         {props.map((newslink, index) => (
           <div key={index}>
-            <Newscard props={newslink} />
+            <Newscard props={newslink} newsview={newsview} />
           </div>
         ))}
         

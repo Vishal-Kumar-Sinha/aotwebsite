@@ -6,7 +6,7 @@ import { FaXmark, FaBars, FaSun, FaMagnifyingGlass } from "react-icons/fa6";
 const Deptnav = ({links}) => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-slate-400/30 z-40 w-full">
+    <nav className="bg-slate-200 z-40 w-screen fixed">
       <div className="flex items-start font-medium justify-around">
         <div className="z-50 p-2 xll:w-auto w-full flex justify-between">
           <Logo />

@@ -8,7 +8,7 @@ import Nav from "@/components/navigation/Nav";
 import Banner from "@/components/banner/Banner";
 import Slider3d from "@/components/banner/Slider3d";
 
-//import { careerbanner } from "@/dictionary/Bannerlist";
+import { studentbanner } from "@/dictionary/Bannerlist";
 import {
   campusphotos,
   btech60list,
@@ -23,8 +23,8 @@ const student = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center">
-        {/* <Banner sliderItems={careerbanner} /> */}
+      <main className="w-full mb-2 min-h-[80vh] flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
+        <Banner sliderItems={studentbanner} />
         <Layout className="!pt-8">
           <div>
             <div className="flex mt-2 flex-wrap rounded-2xl px-4 w-full justify-center">
@@ -97,23 +97,23 @@ const student = () => {
             <div>
               <Slider3d props={campusphotos} />
             </div>
-            <div className="flex flex-wrap rounded-2xl px-4 w-full ">
+            <div className="flex flex-wrap rounded-2xl px-4 w-full">
               <AnimatedText
                 text="Academic Performance"
                 className="!text-4xl text-center font-serif !text-[hsl(232,47%,28%)]"
               />
-              <div>
-                <p className="pb-1 font-sans font-medium text-lg">
-                  &emsp;&emsp;&emsp;Performance is always the result of
-                  intelligent planning, focused efforts and commitment to
-                  excellence. Steady improvement in university result of
-                  students due to Comprehensive Academic System of AOT attests
-                  that positive change is the end result of true learning.
-                </p>
+              <p className="pb-1 font-sans font-medium text-lg">
+                &emsp;&emsp;&emsp;Performance is always the result of
+                intelligent planning, focused efforts and commitment to
+                excellence. Steady improvement in university result of students
+                due to Comprehensive Academic System of AOT attests that
+                positive change is the end result of true learning.
+              </p>
+              <div className="xss:overflow-x-auto">
                 <div className="rounded-2xl w-full my-4 shadow-news-shadow xss:overflow-x-scroll">
                   <table className="table rounded-2xl w-full text-center">
                     <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
-                      <tr className="rounded-2xl bg-blue-950/20">
+                      <tr className="rounded-t-2xl bg-blue-950/20">
                         <th
                           scope="col"
                           className="px-2 py-4 rounded-tl-2xl shadow-inside-shadow border-r"
@@ -129,7 +129,7 @@ const student = () => {
                         </th>
                         <th
                           scope="col"
-                          className="px-2 py-4 shadow-inside-shadow border-r"
+                          className="px-2 py-4 rounded-tr-2xl shadow-inside-shadow border-r"
                         >
                           Entry Level Standard (60% & above in HS/10+2 standard)
                         </th>
@@ -156,7 +156,7 @@ const student = () => {
                 <div className="rounded-2xl w-full my-4 shadow-news-shadow xss:overflow-x-scroll">
                   <table className="table rounded-2xl w-full text-center">
                     <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
-                      <tr className="rounded-2xl bg-blue-950/20">
+                      <tr className="rounded-t-2xl bg-blue-950/20">
                         <th
                           scope="col"
                           className="px-2 py-4 rounded-tl-2xl shadow-inside-shadow border-r"
@@ -172,7 +172,7 @@ const student = () => {
                         </th>
                         <th
                           scope="col"
-                          className="px-2 py-4 shadow-inside-shadow border-r"
+                          className="px-2 py-4 rounded-tr-2xl shadow-inside-shadow border-r"
                         >
                           Entry Level Standard (75% & above in HS/10+2 standard)
                         </th>

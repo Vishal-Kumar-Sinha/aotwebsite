@@ -60,7 +60,7 @@ const Event = ({ links }) => {
             index === currentPosition && (
               <div key={index} className="h-[31rem] pt-2 w-[36rem]">
                 <motion.div
-                  className="transition-all mx-6 ease-out duration-500"
+                  className="transition-all mx-6 ease-out duration-500 justify-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ ease: "easeIn", delay: 0, duration: 2 }}
@@ -68,7 +68,7 @@ const Event = ({ links }) => {
                   onMouseLeave={resume}
                 >
                   {/**start event card */}
-                  <div className="rounded-lg w-fit h-fit p-6 shadow-outside-shadow cursor-pointer transition bg-white duration-200 ease-in-out hover:shadow-inside-shadow">
+                  <div className="rounded-lg w-fit h-fit p-6 shadow-news-shadow cursor-pointer transition bg-white duration-200 ease-in-out hover:shadow-inside-shadow">
                     <motion.div
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{

@@ -16,7 +16,7 @@ const announcements = () => {
             <meta name='description' content='any description' />
         </Head>
         <Nav />
-        <main className='w-full mb-16 flex flex-col items-center justify-center'>
+        <main className='w-full mb-16 flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]'>
             <Layout className='!pt-8'>
                 <AnimatedText text="Imagination Trumps Knowledge!" />
                 <div className="flex flex-wrap rounded-2xl p-4 w-full">

@@ -1,326 +1,529 @@
-import * as React from "react";
+//import logo
+import { AotLogo } from "@/components/Icons";
 //import images
-//home page
-import h1 from "@/assets/images/aot/p1.jpg";
-import h2 from "@/assets/images/aot/p2.jpg";
-import h3 from "@/assets/images/aot/p3.jpg";
-//library
-import library1 from "@/assets/images/library/p1.jpg";
-import library2 from "@/assets/images/library/p2.jpg";
-import library3 from "@/assets/images/library/p3.jpg";
-//cse
-import cse1 from "@/assets/images/departments/cse/p1.jpg";
-import cse2 from "@/assets/images/departments/cse/p2.jpg";
-import cse3 from "@/assets/images/departments/cse/p3.jpg";
-//ece
-import ece1 from "@/assets/images/departments/ece/p1.jpg";
-import ece2 from "@/assets/images/departments/ece/p2.jpg";
-import ece3 from "@/assets/images/departments/ece/p3.jpg";
-//csbs
-import csbs1 from "@/assets/images/departments/csbs/p1.jpg";
-import csbs2 from "@/assets/images/departments/csbs/p2.jpg";
-import csbs3 from "@/assets/images/departments/csbs/p3.jpg";
-//ee
-import ee1 from "@/assets/images/departments/ee/p1.jpg";
-import ee2 from "@/assets/images/departments/ee/p2.jpg";
-import ee3 from "@/assets/images/departments/ee/p3.jpg";
-//eee
-import eee1 from "@/assets/images/departments/eee/p1.jpg";
-import eee2 from "@/assets/images/departments/eee/p2.jpg";
-import eee3 from "@/assets/images/departments/eee/p3.jpg";
-//eie
-import eie1 from "@/assets/images/departments/eie/p1.jpg";
-import eie2 from "@/assets/images/departments/eie/p2.jpg";
-import eie3 from "@/assets/images/departments/eie/p3.jpg";
-//it
-import it1 from "@/assets/images/departments/it/p1.jpg";
-import it2 from "@/assets/images/departments/it/p2.jpg";
-import it3 from "@/assets/images/departments/it/p3.jpg";
-//me
-import me1 from "@/assets/images/departments/me/p1.jpg";
-import me2 from "@/assets/images/departments/me/p2.jpg";
-import me3 from "@/assets/images/departments/me/p3.jpg";
-//esh
-import esh1 from "@/assets/images/departments/esh/p1.jpg";
-import esh2 from "@/assets/images/departments/esh/p2.jpg";
-import esh3 from "@/assets/images/departments/esh/p3.jpg";
-//ca
-import ca1 from "@/assets/images/departments/ca/p1.jpg";
-import ca2 from "@/assets/images/departments/ca/p2.jpg";
-import ca3 from "@/assets/images/departments/ca/p3.jpg";
-//ba
-import ba1 from "@/assets/images/departments/ba/p1.jpg";
-import ba2 from "@/assets/images/departments/ba/p2.jpg";
-import ba3 from "@/assets/images/departments/ba/p3.jpg";
-
+import home1 from "@/assets/images/banner/p2.jpg";
+import home2 from "@/assets/images/banner/p3.jpg";
+import home3 from "@/assets/images/banner/p1.jpg";
+import career1 from "@/assets/images/banner/Career2.jpg";
+import career2 from "@/assets/images/banner/career-goals.jpg";
+import admission1 from "@/assets/images/banner/Admission2.jpg";
+import admission2 from "@/assets/images/banner/Admission3.jpg";
+import placement1 from "@/assets/images/banner/Placement2.jpg";
+import placement2 from "@/assets/images/banner/Placement3.jpg";
+import research1 from "@/assets/images/banner/research1.jpg";
+import research2 from "@/assets/images/banner/research2.jpg";
+import student2 from "@/assets/images/banner/student2.jpg";
+import student1 from "@/assets/images/banner/student1.jpg"
+import talent1 from "@/assets/images/banner/Talent.jpg";
+import talent2 from "@/assets/images/banner/Summer-Internship.jpg";
+import faculty1 from "@/assets/images/banner/faculty1.jpg";
+import faculty2 from "@/assets/images/banner/All-FAC.jpg";
+import library1 from "@/assets/images/banner/library1.jpg";
+import library2 from "@/assets/images/banner/library2.jpg";
+import cse1 from "@/assets/images/banner/cse1.jpg";
+import cse2 from "@/assets/images/banner/cse2.jpg";
+import csbs1 from "@/assets/images/banner/csbs1.jpg";
+import ece1 from "@/assets/images/banner/ece1.jpg";
+import ece2 from "@/assets/images/banner/ece2.jpg";
+import ba1 from "@/assets/images/banner/ba1.jpg";
+import ba2 from "@/assets/images/banner/ba2.jpg";
+import ee1 from "@/assets/images/banner/ee1.jpg";
+import ee2 from "@/assets/images/banner/ee2.jpg";
+import eee1 from "@/assets/images/banner/eee1.jpg";
+import eie1 from "@/assets/images/banner/eie2.jpg";
+import esh1 from "@/assets/images/banner/esh2.jpg";
+import it2 from "@/assets/images/banner/it2.jpg";
+import me1 from "@/assets/images/banner/me1.jpg";
+import me2 from "@/assets/images/banner/me2.jpg";
+import agile1 from "@/assets/images/banner/agile1.jpg";
+import analects1 from "@/assets/images/banner/analects1.jpg";
+import ardour1 from "@/assets/images/banner/ardour1.jpg";
+import acuity1 from "@/assets/images/banner/acuity1.jpg";
+import accilivities1 from "@/assets/images/banner/accilivities1.jpg";
 
 //banner lists
 export const homebanner = [
   {
-    imageUrl: h1,
-    title: "Double Nuke ",
-    subtitle: "vishal",
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h2,
-    title: "Double Nuke Burger",
-    subtitle: "kumar",
+    imageUrl: home2,
+    title: "Education For Transformation",
+    subtitle: "AOT",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h3,
-    title: "Double Nuke Burger",
-    subtitle: "sinha",
+    imageUrl: home3,
+    title: "Imagine, Innovate, Inspire",
+    subtitle: "AOT",
+    logo: <AotLogo />,
   },
 ];
 //career banner
 export const careerbanner = [
   {
-    imageUrl: h1,
-    title: "Double Nuke ",
-    subtitle: "vishal",
+    imageUrl: career1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h2,
-    title: "Double Nuke Burger",
-    subtitle: "kumar",
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h3,
-    title: "Double Nuke Burger",
-    subtitle: "sinha",
+    imageUrl: career2,
+    title: "Shaping The Future",
+    subtitle: "Join Us",
+    logo: <AotLogo />,
+  },
+];
+//admission banner
+export const admissionbanner = [
+  {
+    imageUrl: admission1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: admission2,
+    title: "Shaping The Future",
+    subtitle: "Join Us",
+    logo: <AotLogo />,
+  },
+];
+//placement banner
+export const placementbanner = [
+  {
+    imageUrl: placement1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: placement2,
+    title: "Shaping The Future",
+    subtitle: "Join Us",
+    logo: <AotLogo />,
+  },
+];
+//research banner
+export const researchbanner = [
+  {
+    imageUrl: research1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Shaping The Future",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: research2,
+    title: "Innovative Transformative Holistic",
+    subtitle: "...Discover More",
+    logo: <AotLogo />,
+  },
+];
+//student
+export const studentbanner = [
+  {
+    imageUrl: student2,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: student1,
+    title: "Shaping The Future",
+    subtitle: "Join Us",
+    logo: <AotLogo />,
+  },
+];
+//talent banner
+export const talentbanner = [
+  {
+    imageUrl: talent1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: talent2,
+    title: "Shaping The Future",
+    subtitle: "Join Us",
+    logo: <AotLogo />,
   },
 ];
 //faculty banner
 export const facultybanner = [
   {
-    imageUrl: h1,
-    title: "Double Nuke ",
-    subtitle: "vishal",
+    imageUrl: faculty1,
+    title:
+      "Education is the most powerful weapon which you can use to change the world.",
+    subtitle: "— Nelson Mandela",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h2,
-    title: "Double Nuke Burger",
-    subtitle: "kumar",
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: h3,
-    title: "Double Nuke Burger",
-    subtitle: "sinha",
+    imageUrl: faculty2,
+    title: "Our Faculty",
+    subtitle: "AOT",
+    logo: <AotLogo />,
   },
 ];
-
 export const librarybanner = [
   {
     imageUrl: library1,
     title: "Central Library",
     subtitle: "AOT",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: library3,
+    imageUrl: home1,
     title: "Academy Of Technology",
-    subtitle: "...translate vision into reality",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
   {
     imageUrl: library2,
     title: "Digital Library",
     subtitle: "AOT",
+    logo: <AotLogo />,
   },
 ];
-
 export const csebanner = [
   {
     imageUrl: cse1,
-    title: "Double Nuke ",
-    subtitle: "Try our new Meal",
+    title: "Department Of Computer Science & Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
   {
     imageUrl: cse2,
-    title: "Double Nuke Burger",
-    subtitle: "Try our new Meal",
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT CSE",
+    logo: <AotLogo />,
+  },
+];
+export const csbsbanner = [
+  {
+    imageUrl: csbs1,
+    title: "Department Of Computer Science & Business System",
+    subtitle: "AOT",
+    logo: <AotLogo />,
   },
   {
-    imageUrl: cse3,
-    title: "Double Nuke Burger",
-    subtitle: "Try our new Meal",
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: cse2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT CSBS",
+    logo: <AotLogo />,
+  },
+];
+export const ecebanner = [
+  {
+    imageUrl: ece1,
+    title: "Department Of Electronics & Communication Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: ece2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT ECE",
+    logo: <AotLogo />,
+  },
+];
+export const babanner = [
+  {
+    imageUrl: ba1,
+    title: "Department Of Business Administration",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: ba2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT BA",
+    logo: <AotLogo />,
+  },
+];
+export const cabanner = [
+  {
+    imageUrl: cse1,
+    title: "Department Of Computer Application",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: csbs1,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT CA",
+    logo: <AotLogo />,
+  },
+];
+export const eebanner = [
+  {
+    imageUrl: ee1,
+    title: "Department Of Electrical Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: ee2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT EE",
+    logo: <AotLogo />,
+  },
+];
+export const eeebanner = [
+  {
+    imageUrl: eee1,
+    title: "Department Of Electrical & Electronics Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: ece1,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT EEE",
+    logo: <AotLogo />,
+  },
+];
+export const eiebanner = [
+  {
+    imageUrl: ee2,
+    title: "Department Of Electronics & Instrumentation Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: eie1,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT EIE",
+    logo: <AotLogo />,
+  },
+];
+export const eshbanner = [
+  {
+    imageUrl: esh1,
+    title: "Department Of Engineering Science & Humanities",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: research2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT ESH",
+    logo: <AotLogo />,
+  },
+];
+export const itbanner = [
+  {
+    imageUrl: cse1,
+    title: "Department Of Information Technology",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: it2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT IT",
+    logo: <AotLogo />,
+  },
+];
+export const mebanner = [
+  {
+    imageUrl: me1,
+    title: "Department Of Mechanical Engineering",
+    subtitle: "AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: me2,
+    title: "Gateway To Limitless Possibilities",
+    subtitle: "AOT ME",
+    logo: <AotLogo />,
+  },
+];
+//agile banner
+export const agilebanner = [
+  {
+    imageUrl: agile1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
   },
 ];
 
-export const csbsbanner = [
-    {
-      imageUrl: csbs1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: csbs2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: csbs3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
+//acuity banner
+export const acuitybanner = [
+  {
+    imageUrl: acuity1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+];
+//accilivities
+export const accilivitiesbanner = [
+  {
+    imageUrl: accilivities1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+];
 
-  export const ecebanner = [
-    {
-      imageUrl: ece1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: ece2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: ece3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const babanner = [
-    {
-      imageUrl: ba1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: ba2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: ba3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const cabanner = [
-    {
-      imageUrl: ca1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: ca2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: ca3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const eebanner = [
-    {
-      imageUrl: ee1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: ee2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: ee3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const eeebanner = [
-    {
-      imageUrl: eee1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: eee2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl:eee3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const eiebanner = [
-    {
-      imageUrl: eie1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: eie2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: eie3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const eshbanner = [
-    {
-      imageUrl: esh1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: esh2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: esh3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const itbanner = [
-    {
-      imageUrl: it1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: it2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: it3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
-
-  export const mebanner = [
-    {
-      imageUrl: me1,
-      title: "Double Nuke ",
-      subtitle: "Try our new Meal",
-    },
-    {
-      imageUrl: me2,
-      title: "Double Nuke Burger",
-      subtitle: "Try our new Meal",
-    },
-    {
-        imageUrl: me3,
-        title: "Double Nuke Burger",
-        subtitle: "Try our new Meal",
-      },
-  ];
+//analects
+export const analectsbanner = [
+  {
+    imageUrl: analects1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+];
+//ardour
+export const ardourbanner = [
+  {
+    imageUrl: ardour1,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: home1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+];

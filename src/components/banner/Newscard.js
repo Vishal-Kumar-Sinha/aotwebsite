@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 //import "./News.css";
 
-const Newscard = ({props}) => {
+const Newscard = ({props, newsview}) => {
   const setitems = (() => {
     localStorage.setItem("aot-news-ntitle", props.ntitle);
     localStorage.setItem("aot-news-imgLink", props.imgLink);
@@ -19,7 +19,7 @@ const Newscard = ({props}) => {
             <h2 className="font-serif text-lg px-1 font-semibold">{props.ntitle}</h2>
             <p className=" font-mont font-[350] leading-[1.05]">
               {content}
-              <Link href="/newsview" onClick={setitems} className=" text-blue-700 font-semibold px-2 text-center pb-0.5 rounded-2xl hover:bg-slate-400/40 transition-all ease-in-out duration-300 delay-0 active:opacity-0">
+              <Link href={newsview} onClick={setitems} className=" text-blue-700 font-semibold px-2 text-center pb-0.5 rounded-2xl hover:bg-slate-400/40 transition-all ease-in-out duration-300 delay-0 active:opacity-0">
                 Read&nbsp;More
               </Link>
             </p>

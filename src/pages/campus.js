@@ -7,7 +7,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Nav from "@/components/navigation/Nav";
 import Banner from "@/components/banner/Banner";
 
-//import { careerbanner } from "@/dictionary/Bannerlist";
+import { homebanner } from "@/dictionary/Bannerlist";
 
 const student = () => {
   return (
@@ -17,8 +17,8 @@ const student = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center">
-        {/* <Banner sliderItems={careerbanner} /> */}
+      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center  smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
+        <Banner sliderItems={homebanner} />
         <Layout className="!pt-8">
           <div>
             <div className="flex flex-wrap rounded-2xl px-4 w-full ">

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import { motion } from "framer-motion";
 //import components
 import Layout from "@/components/Layout";
@@ -11,7 +10,7 @@ import Gate from "@/components/talenttransformation/Gate";
 import Summerinternship from "@/components/talenttransformation/Summerinternship";
 
 //import dictionaries
-import { careerbanner } from "@/dictionary/Bannerlist";
+import { talentbanner } from "@/dictionary/Bannerlist";
 
 const talentData = [
   {
@@ -37,8 +36,8 @@ const talent = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center">
-        {/* <Banner sliderItems={careerbanner} /> */}
+      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
+        <Banner sliderItems={talentbanner} />
         <Layout className="!pt-8">
           <div className="flex flex-wrap  mx-auto xll:mx-0 mb-10 mt-5 justify-center">
             {talentData.map((item, itemIndex) => {

@@ -52,7 +52,7 @@ const NavLinks = () => {
                       className="bg-white w-[25vw] tail border absolute rounded-sm top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32"
                     >
                       {mysublinks.sublink.map((slink) => (
-                            <li key={slink.name} className="px-3 head py-1 hover:bg-gray-100">
+                            <li key={slink.name} className="px-3 head py-1 hover:bg-gray-200">
                               <Link href={slink.link} target={slink.target}
                                 className="hover:text-primary text-sm text-gray-600"
                               >

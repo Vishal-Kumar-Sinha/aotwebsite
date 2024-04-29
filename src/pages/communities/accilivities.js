@@ -7,7 +7,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Nav from "@/components/navigation/Nav";
 import Banner from "@/components/banner/Banner";
 
-import { librarybanner } from "@/dictionary/Bannerlist";
+import { accilivitiesbanner } from "@/dictionary/Bannerlist";
 
 const accilivities = () => {
   return (
@@ -17,8 +17,8 @@ const accilivities = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-2 min-h-[80vh] flex flex-col items-center justify-center">
-        {/* <Banner sliderItems={librarybanner} /> */}
+      <main className="w-full mb-2 min-h-[80vh] flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
+        <Banner sliderItems={accilivitiesbanner} />
         <Layout className="!pt-8">
           <div className="flex flex-wrap rounded-2xl pt-4 px-4 w-full ">
             <AnimatedText

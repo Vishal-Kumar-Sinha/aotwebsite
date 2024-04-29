@@ -17,7 +17,7 @@ const library = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center">
+      <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
         <Banner sliderItems={librarybanner} />
         <Layout className="!pt-8">
           <div className="flex flex-wrap rounded-2xl p-4 w-full ">

@@ -27,7 +27,7 @@ const Deptlinks = ({ links }) => {
                     <div className="w-4 h-4 left-3 absolute -mt-2 bg-white rotate-45"></div>
                   </div>
                   {link.sublinks.map((slink) => (
-                    <div key={slink} className="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                    <div key={slink.name} className="rounded-sm relative px-3 py-1 hover:bg-gray-100">
                       <li className="text-sm font-semibold my-1.5">
                         <Link href={slink.href} className="hover:text-primary">
                           {slink.name}

@@ -1,6 +1,6 @@
 import React from "react";
-import AnimatedText from "../AnimatedText";
-import AnimatedTextWord from "../AnimatedTextWord";
+import AnimatedText from "@/components/AnimatedText";
+import AnimatedTextWord from "@/components/AnimatedTextWord";
 
 //import directories
 import { btechcoachinglinks, mcacoachinglinks } from "@/dictionary/Talentlinks";

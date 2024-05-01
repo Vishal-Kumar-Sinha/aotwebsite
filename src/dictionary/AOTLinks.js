@@ -5,6 +5,7 @@ export const links = [
       sublinks: [
         {
           Head: "Department",
+          sub: true,
           sublink: [
             { name: "Department of Computer Science & Engineering", link: "/department/cse", target: "" },
             {
@@ -35,21 +36,28 @@ export const links = [
         },
         {
           Head: "UG Programs",
-          sublink: [
-            { name: "Computer Science and Engineering", link: "/", target: "" },
-            { name: "Computer Science & Business Systems", link: "/", target: "" },
-            { name: "Electronics and Communication  Engineering", link: "/", target: "" },
-            { name: "Electrical and Electronics Engineering", link: "/", target: "" },
-            { name: "Electrical Engineering", link: "/", target: "" },
-            { name: "Mechanical Engineering ", link: "/", target: "" },
-          ],
+          sub: false,
+          link: "/ugprograms",
+          target: "",
+          // sublink: [
+          //   { name: "Computer Science and Engineering", link: "/", target: "" },
+          //   { name: "Computer Science & Business Systems", link: "/", target: "" },
+          //   { name: "Electronics and Communication  Engineering", link: "/", target: "" },
+          //   { name: "Electrical and Electronics Engineering", link: "/", target: "" },
+          //   { name: "Electrical Engineering", link: "/", target: "" },
+          //   { name: "Mechanical Engineering ", link: "/", target: "" },
+          // ],
         },
         {
           Head: "PG Programs",
-          sublink: [{ name: "Master in Computer Applications", link: "/", target: "" }],
+          sub: false,
+          link: "/pgprograms",
+          target: "",
+          // sublink: [{ name: "Master in Computer Applications", link: "/", target: "" }],
         },
         {
           Head: "Resources",
+          sub: true,
           sublink: [
             { name: "Library", link: "/library", target: "" },
             { name: "Moodle", link: "http://182.74.215.198/moodle/", target: "_blank" },
@@ -57,10 +65,17 @@ export const links = [
         },
         {
           Head: "Admissions",
+          sub: true,
           sublink: [
             { name: "UG Admission", link: "/admissionug", target: "" },
             { name: "PG Admission", link: "/admissionpg", target: "" },
           ],
+        },
+        {
+          Head: "Placements",
+          sub: false,
+          link: "/placements",
+          target: "",
         },
       ],
     },

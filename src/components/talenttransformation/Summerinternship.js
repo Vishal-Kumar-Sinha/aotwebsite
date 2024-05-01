@@ -1,6 +1,6 @@
 import React from "react";
 //import components
-import AnimatedTextWord from "../AnimatedTextWord";
+import AnimatedTextWord from "@/components/AnimatedTextWord";
 
 // import dictionary
 import { summerinternshipcompanylinks } from "@/dictionary/Summerinternshipcompanylist";

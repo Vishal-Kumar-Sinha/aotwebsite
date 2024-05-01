@@ -46,8 +46,8 @@ export default function Home() {
         <Banner sliderItems={homebanner} />
         <Layout className="!pt-8">
           <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-          <div className="grid grid-cols-2 gap-5 llg:gap-10 smmy:grid-cols-1">
-            <div className=" bg-red-300/40 p-2 rounded-2xl shadow-news-shadow">
+          <div className="flex flex-wrap md:gap-y-10 gap-5 justify-center">
+            <div className="md:w-[90%] lg:w-[45%] llg:w-[30%] bg-red-300/40 p-2 rounded-2xl shadow-news-shadow">
               <div className=" flex mx-2 justify-center ">
                 <AnimatedText
                   text="Notice"
@@ -61,7 +61,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="  p-2 border rounded-2xl">
-                <div className="h-[32rem] w-full overflow-y-scroll scroll-smooth scrlbr">
+                <div className="h-[22rem] w-full overflow-y-scroll scroll-smooth scrlbr">
                   {announcementlinks.map((link, index) => (
                     <div key={index} className="m-2">
                       <Announcementcard props={link} />
@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className=" bg-slate-300/40 p-2 rounded-2xl shadow-news-shadow">
+            <div className="md:w-[90%] lg:w-[45%] gxl:w-[30%] bg-slate-300/40 p-2 rounded-2xl mx-4 shadow-news-shadow">
               <div className=" flex mx-2 justify-center ">
                 <AnimatedText
                   text="Events"
@@ -83,16 +83,63 @@ export default function Home() {
                   />
                 </Link>
               </div>
-              <div className="h-[32rem] p-2 border rounded-2xl">
+              <div className="h-[22rem] w-full p-2 border rounded-2xl">
                 <Event links={eventlinks} />
+              </div>
+            </div>
+            <div className="md:w-[90%] lg:w-[50%] llg:w-[30%] bg-red-300/40 p-2 rounded-2xl shadow-news-shadow">
+              <div className=" flex mx-2 justify-center ">
+                <AnimatedText
+                  text="AOT Online"
+                  className="!xxs:text-lg !xs:text-xl !lg:text-lg !text-4xl text-left ml-2"
+                />
+              </div>
+              <div className=" p-2 border rounded-2xl">
+                <div className="h-[22rem] lg:h-fit w-full">
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      Industry 4.0 Center @AOT
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      AOT Student Portal
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      AOT Web Magazine
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      Google Innovation Centre
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      Moodle Portal Login
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                      AOT Grievance Redressal/ Feedback
+                    </p>
+                  </Link>
+                  <Link href="/">
+                    <p className="bg-white shadow-news-shadow hover:scale-95 transition-all ease-in-out duration-200 my-2 rounded-md w-full px-3 py-1 font-serif text-lg">
+                    Techfiesta || Games Meet || Humatronics
+                    </p>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
           <AnimatedText text="About us" className="my-8" />
-            <AnimatedTextWord
-              text="&ldquo;Aspires to be a pre-eminent deemed university of national standing in education and innovation.&rdquo;"
-              className="text-3xl text-accent inline text-center font-bold font-serif italic pt-3"
-            />
+          <AnimatedTextWord
+            text="&ldquo;Aspires to be a pre-eminent deemed university of national standing in education and innovation.&rdquo;"
+            className="text-3xl text-accent inline text-center font-bold font-serif italic pt-3"
+          />
           <div>
             <div className="grid grid-cols-2 lg:grid-cols-1 gap-8 rounded-2xl p-4 w-full justify-center items-center">
               <div className="w-full h-fit p-2 rounded-2xl border border-white shadow-news-shadow">
@@ -391,14 +438,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-1 flex flex-wrap">
-              <div className="bg-[hsl(232,47%,28%)] w-full h-1 mt-[18px] rounded-2xl"></div>
-              <Link
-                href="/research"
-                className="absolute bg-gray-100 px-3 py-2 w-fit rounded-3xl text-center font-bold sm:left-[47%] left-[75%] hover:shadow-inside-shadow hover:scale-90 active:scale-110 transition-all duration-300"
-              >
-                Know More
-              </Link>
-            </div>
+                <div className="bg-[hsl(232,47%,28%)] w-full h-1 mt-[18px] rounded-2xl"></div>
+                <Link
+                  href="/research"
+                  className="absolute bg-gray-100 px-3 py-2 w-fit rounded-3xl text-center font-bold sm:left-[47%] left-[75%] hover:shadow-inside-shadow hover:scale-90 active:scale-110 transition-all duration-300"
+                >
+                  Know More
+                </Link>
+              </div>
             </div>
           </div>
           <div>

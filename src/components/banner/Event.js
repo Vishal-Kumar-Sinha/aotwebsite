@@ -58,7 +58,7 @@ const Event = ({ links }) => {
         {links.map(
           (props, index) =>
             index === currentPosition && (
-              <div key={index} className="h-[31rem] pt-2 w-[36rem]">
+              <div key={index} className="h-[34rem] pt-2 w-[20rem]">{/**h-[31rem] pt-2 w-[36rem] */}
                 <motion.div
                   className="transition-all mx-6 ease-out duration-500 justify-center"
                   initial={{ opacity: 0 }}
@@ -68,7 +68,7 @@ const Event = ({ links }) => {
                   onMouseLeave={resume}
                 >
                   {/**start event card */}
-                  <div className="rounded-lg w-fit h-fit p-6 shadow-news-shadow cursor-pointer transition bg-white duration-200 ease-in-out hover:shadow-inside-shadow">
+                  <div className="rounded-lg w-fit h-fit p-6 shadow-news-shadow cursor-pointer transition bg-white duration-200 ease-in-out hover:bg-gray-100">
                     <motion.div
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{

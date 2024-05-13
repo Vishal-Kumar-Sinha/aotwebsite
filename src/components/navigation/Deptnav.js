@@ -1,12 +1,22 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Logo from "../Logo";
 import Deptlinks from "./Deptlinks";
 import { FaXmark, FaBars, FaSun, FaMagnifyingGlass } from "react-icons/fa6";
 
-const Deptnav = ({links}) => {
+const Deptnav = ({ links }) => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-slate-200 z-40 w-screen fixed">
+    <motion.nav
+      initial={{ scale: 0.7, rotateX: 360, opacity: 0.2 }}
+      animate={{
+        scale: 1,
+        opacity: 1,
+        rotateX: 0,
+        transition: { ease: "easeOut", duration: 0.6 },
+      }}
+      className="bg-slate-200 z-40 w-screen fixed"
+    >
       <div className="flex items-start font-medium justify-around">
         <div className="z-50 p-2 xll:w-auto w-full flex justify-between">
           <Logo />
@@ -19,7 +29,9 @@ const Deptnav = ({links}) => {
             </div>
           </div>
           <div className="text-2xl md:text-2xl flex xs:gap-14 md:gap-10 gap-20 smm:pl-2 pl-6 items-center pr-3 justify-between xll:hidden">
-          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
+            <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
+              <FaMagnifyingGlass />
+            </div>
             {/* <FaSun /> */}
             <div onClick={() => setOpen(!open)}>
               {open ? <FaXmark /> : <FaBars />}
@@ -27,7 +39,9 @@ const Deptnav = ({links}) => {
           </div>
         </div>
         <ul className="xll:flex hidden items-center gap-10">
-        <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
+          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
+            <FaMagnifyingGlass />
+          </div>
           <Deptlinks links={links} />
           {/* <FaSun /> */}
         </ul>
@@ -41,7 +55,7 @@ const Deptnav = ({links}) => {
           <Deptlinks links={links} />
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

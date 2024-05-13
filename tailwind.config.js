@@ -61,7 +61,7 @@ module.exports = {
     boxShadow: {
       'outside-shadow': "6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7)",
       'inside-shadow': "inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05)",
-      'cube-shadow': "0px 0px 52px #59f",
+      'cube-shadow': "0px 0px 52px #fff",
       'news-shadow': "0 -2px 12px rgba(0,0,0,0.3)",
     },
     screens: {
@@ -147,7 +147,7 @@ module.exports = {
           'transform': 'rotatez(0deg)',
         },
         '.tail > .nvli:hover': {
-          'background-color': '#C0C2C9',
+          'background-color': 'rgb(229 231 235)',
         },
         '.head:hover > .nvbtn .nvlogo': {
           'transform': 'rotatez(-180deg)',

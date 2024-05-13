@@ -40,6 +40,10 @@ import analects1 from "@/assets/images/banner/analects1.jpg";
 import ardour1 from "@/assets/images/banner/ardour1.jpg";
 import acuity1 from "@/assets/images/banner/acuity1.jpg";
 import accilivities1 from "@/assets/images/banner/accilivities1.jpg";
+import industry1 from "@/assets/images/banner/Industry-4.0.jpg";
+import industry2 from "@/assets/images/banner/Industry2.jpg";
+import gic1 from "@/assets/images/banner/Google-Innovation-Centre-Image.jpg";
+import wmtlc1 from "@/assets/images/banner/Wipro-MTLC-Image.jpg";
 
 //banner lists
 export const homebanner = [
@@ -524,6 +528,33 @@ export const ardourbanner = [
     imageUrl: home1,
     title: "Academy Of Technology",
     subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+];
+
+export const industrybanner = [
+  {
+    imageUrl: industry2,
+    title: "Where Dreams Take Form...",
+    subtitle: "Discover More Today",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: industry1,
+    title: "Academy Of Technology",
+    subtitle: "...translating vision into reality",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: gic1,
+    title: "Google Innovation Centre",
+    subtitle: "@ AOT",
+    logo: <AotLogo />,
+  },
+  {
+    imageUrl: wmtlc1,
+    title: "Wipro Mission10x Technology Centre",
+    subtitle: "@ AOT",
     logo: <AotLogo />,
   },
 ];

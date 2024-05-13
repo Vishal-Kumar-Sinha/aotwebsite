@@ -30,14 +30,14 @@ const Announcementcard = ({ props }) => {
         <Link href={props.href} target="_blank">
           <div className="w-full min-h-[4rem] h-auto flow-root relative shadow-news-shadow bg-white/70 hover:bg-slate-400/60 hover:scale-95 transition-all duration-300 rounded-2xl px-2 py-1">
             <div className="w-4 h-4 left-2 top-2 relative bg-black rounded-[50%]">
-              <span className="absolute w-[12rem] h-1 bg-gradient-to-r from-black left-2 top-[5px]"></span>
-              <span className="absolute w-[4rem] h-1 bg-gradient-to-r from-black -left-6 top-10 rotate-90"></span>
+              <span className="absolute w-[10rem] h-1 bg-gradient-to-r from-black left-2 top-[5px]"></span>
+              <span className="absolute w-[3rem] h-1 bg-gradient-to-r from-black -left-[17px] top-7 rotate-90"></span>
             </div>
             <div className="flex justify-between">
-              <div className="ml-7 h-full mt-1 w-fit mr-1 font-medium text-lg">
-                <span className="text-[2rem] font-serif font-extrabold ">
+              <div className="ml-7 h-full w-fit mr-1 font-medium text-lg">
+                <span className="text-[1.5rem] font-serif font-extrabold ">
                   {day}
-                  <span className="font-serif text-[1rem] font-extrabold align-text-top">
+                  <span className="font-serif text-[0.7rem] font-extrabold align-text-top">
                     {month},&nbsp;{yr}
                   </span>
                 </span>
@@ -63,9 +63,9 @@ const Announcementcard = ({ props }) => {
                 ) : null}
               </div>
             </div>
-            <div className="mx-2 h-full my-2 w-[96%] font-sans font-medium text-base text-center">
-                {props.name}
-              </div>
+            <div className="mx-2 h-full mb-1 w-[96%] font-sans font-medium text-base text-center">
+              {props.name}
+            </div>
           </div>
         </Link>
       </div>

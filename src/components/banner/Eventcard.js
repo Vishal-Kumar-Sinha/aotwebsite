@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Eventmodal from "./Eventmodal";
 import Link from "next/link";
+import { motion, useScroll } from "framer-motion";
 
 const Eventcard = ({ props, className }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.05 1"],
+  });
   return (
     <>
-      <div
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scrollYProgress,
+          opacity: scrollYProgress,
+        }}
         className={`rounded-lg w-fit h-fit p-6 shadow-outside-shadow cursor-pointer transition bg-white duration-200 ease-in-out hover:shadow-inside-shadow ${className}`}
       >
         <div className="overflow-hidden transform rounded-lg shadow-outside-shadow">
@@ -42,7 +53,7 @@ const Eventcard = ({ props, className }) => {
             </div>
           )}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

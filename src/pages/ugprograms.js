@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
@@ -24,7 +25,20 @@ const ugprograms = () => {
                 text="Under Graduate Programmes (B. Tech)"
                 className="!text-4xl text-center font-serif text-accent italic"
               />
-              <div className="rounded-2xl w-full shadow-news-shadow md:overflow-x-scroll">
+              <motion.div
+                initial={{ opacity: 0, scale: 0, rotateY: 270 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  rotateY: 0,
+                  transition: {
+                    ease: "easeOut",
+                    delay: 0.2,
+                    duration: 0.8,
+                  },
+                }}
+                className="rounded-2xl w-full shadow-news-shadow md:overflow-x-scroll"
+              >
                 <table className="table rounded-2xl w-full text-center">
                   <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
                     <tr className="rounded-2xl bg-blue-950/20">
@@ -186,12 +200,26 @@ const ugprograms = () => {
                     ))}
                   </tbody>
                 </table>
-              </div>
-              <div className="mt-4 mx-5 text-xl italic font-serif text-center font-bold text-gray-600">
-                [Affiliated by Maulana Abul Kalam Azad University of Technology,
-                West Bengal (formerly West Bengal University of Technology) for
-                the Academic Year 2021-2022]
-              </div>
+              </motion.div>
+              <AnimatePresence>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    scale: 1,
+                    transition: {
+                      ease: "easeOut",
+                      delay: 0.25,
+                      duration: 1,
+                    },
+                  }}
+                  className="mt-4 mx-5 text-xl italic font-serif text-center font-bold text-gray-600"
+                >
+                  [Affiliated by Maulana Abul Kalam Azad University of
+                  Technology, West Bengal (formerly West Bengal University of
+                  Technology) for the Academic Year 2021-2022]
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
         </Layout>

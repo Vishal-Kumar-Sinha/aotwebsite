@@ -36,25 +36,77 @@ const Footer = () => {
       <section className="w-full h-full inline-block bg-light footerxll:px-32 footerxll:py-4 p-4 bg-transparent">
         <div className="flex flex-wrap w-full justify-around mt-10 lg:hidden">
           <div className=" py-3 px-4 footerxl:w-[30vw]">
-            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">Quick links</h2>
+            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
+              Quick links
+            </h2>
             <ul className="text-left" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 footerxl:hidden">
-            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">Download Section</h2>
+            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
+              Download Section
+            </h2>
             <ul className="text-left" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-5 rounded-2xl justify-self-center">
@@ -62,7 +114,7 @@ const Footer = () => {
               <Logo />
             </div>
             <div className="text-center cursor-none p-2 mt-3 font-[serif] uppercase text-3xl text-[hsl(232,47%,28%)] font-bold">
-              <p>Academy Of</p>
+              <p>Academy</p>
               <p>Of</p>
               <p>Technology</p>
             </div>
@@ -72,36 +124,117 @@ const Footer = () => {
             </div>
           </div>
           <div className="py-3 px-4 footerxl:w-[30vw] footerxll:hidden">
-            <h2 className="text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">Download Section</h2>
+            <h2 className="text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
+              Download Section
+            </h2>
             <ul className="text-right" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 footerxl:w-[45vw]">
-            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">Admission Enquiry</h2>
-            <ul className="text-right footerxl:text-left" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+            <h2 className="text-start font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
+              Admission Enquiry
+            </h2>
+            <ul
+              className="text-right footerxl:text-left"
+              style={{ listStyleType: "none" }}
+            >
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 footerxl:w-[45vw]">
-            <h2 className="text-start footerxl:text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">Contacts Section</h2>
+            <h2 className="text-start footerxl:text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
+              Contacts Section
+            </h2>
             <ul className="text-right" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -127,37 +260,76 @@ const Footer = () => {
               Quick links
             </h2>
             <ul className="text-left" style={{ listStyleType: "none" }}>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
-              <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
-                fgzgzgzfd
-              </li>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 sm:w-[100vw] w-[45vw]">
             <h2 className="text-start smm:text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
               Download Section
             </h2>
-            <ul className="text-left smm:text-right" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+            <ul
+              className="text-left smm:text-right"
+              style={{ listStyleType: "none" }}
+            >
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 sm:w-[100vw] w-[45vw]">
@@ -165,25 +337,76 @@ const Footer = () => {
               Admission Enquiry
             </h2>
             <ul className="text-left" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="py-3 px-4 sm:w-[100vw] w-[45vw]">
             <h2 className="text-start smm:text-end font-bold font-serif text-xl p-2 rounded-t-2xl border-b border-black">
               Contacts Section
             </h2>
-            <ul className="text-left smm:text-right" style={{ listStyleType: "none" }}>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
-              <Link href="/" ><li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">fgzgzgzfd</li></Link>
+            <ul
+              className="text-left smm:text-right"
+              style={{ listStyleType: "none" }}
+            >
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="hover:bg-slate-300 px-2 py-1 cursor-pointer font-semibold transition-all duration-200 ease-in-out">
+                  fgzgzgzfd
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

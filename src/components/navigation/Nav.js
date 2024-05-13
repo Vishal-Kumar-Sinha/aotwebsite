@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Logo from "../Logo";
 import NavLinks from "./NavLinks";
 import { FaXmark, FaBars, FaMagnifyingGlass } from "react-icons/fa6";
@@ -6,7 +7,16 @@ import { FaXmark, FaBars, FaMagnifyingGlass } from "react-icons/fa6";
 const Nav = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-slate-300 z-40 justify-center fixed w-screen">
+    <motion.nav
+      initial={{ scale: 0.7, rotateX: 360, opacity: 0.2 }}
+      animate={{
+        scale: 1,
+        opacity: 1,
+        rotateX: 0,
+        transition: { ease: "easeOut", duration: 0.6 },
+      }}
+      className="bg-slate-300 z-40 justify-center fixed w-screen"
+    >
       <div className="flex items-start font-medium justify-around  ">
         <div className="z-50 p-2 llg:w-auto w-full flex justify-between">
           <Logo />
@@ -19,7 +29,9 @@ const Nav = () => {
             </div>
           </div>
           <div className="text-2xl md:text-2xl flex xs:gap-14 md:gap-10 gap-20 smm:pl-2 pl-6 items-center pr-3 justify-between llg:hidden">
-          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
+            <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
+              <FaMagnifyingGlass />
+            </div>
             {/* <FaSun /> */}
             <div onClick={() => setOpen(!open)}>
               {open ? <FaXmark /> : <FaBars />}
@@ -35,7 +47,9 @@ const Nav = () => {
           </div>
         </div>
         <ul className="llg:flex hidden items-center gap-10">
-          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75"><FaMagnifyingGlass /></div>
+          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
+            <FaMagnifyingGlass />
+          </div>
           <NavLinks />
           {/* <FaSun /> */}
         </ul>
@@ -49,7 +63,7 @@ const Nav = () => {
           <NavLinks />
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

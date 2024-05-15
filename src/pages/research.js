@@ -1,16 +1,82 @@
-import React from 'react';
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+import { FaGraduationCap } from "react-icons/fa6";
+import { motion, AnimatePresence } from "framer-motion";
 //import components
 import Layout from "@/components/Layout";
 import Nav from "@/components/navigation/Nav";
 import Banner from "@/components/banner/Banner";
 import AnimatedText from "@/components/AnimatedText";
+import AnimatedTextWord from "@/components/AnimatedTextWord";
+import { AotLogo } from "@/components/Icons";
+import Companyslider from "@/components/banner/Companyslider";
 //dictionary import
 import { researchbanner } from "@/dictionary/Bannerlist";
-
+import { partnerphotos } from "@/dictionary/Researchlinks";
 
 const research = () => {
+  const parent = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        ease: "easeOut",
+        duration: 0.6,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+  const childitem = {
+    hidden: { opacity: 0, scale: 0 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: "easeOut",
+        staggerChildren: 0.2,
+        duration: 0.8,
+      },
+    },
+  };
+  const childitem2 = {
+    hidden: { opacity: 0, scale: 0.75, rotateY: 180 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      rotateY: 0,
+      transition: {
+        ease: "easeOut",
+        staggerChildren: 0.2,
+        duration: 1,
+      },
+    },
+  };
+  const childitem3 = {
+    hidden: { opacity: 0, scale: 0.25, rotateY: 180 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      rotateY: 0,
+      transition: {
+        ease: "easeOut",
+        delayChildren: 0.2,
+        staggerChildren: 0.25,
+        duration: 1,
+      },
+    },
+  };
+  const childitem4 = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        ease: "easeOut",
+        duration: 1.2,
+      },
+    },
+  };
   return (
     <>
       <Head>
@@ -21,28 +87,271 @@ const research = () => {
       <main className="flex w-full flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
         <Banner sliderItems={researchbanner} />
         <Layout className="!pt-8">
-          <div id="current-research">
-          <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-          <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
-            Nisi labore officia consectetur do ex Lorem dolore fugiat est consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit et commodo cillum deserunt dolor reprehenderit adipisicing. Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud elit fugiat culpa deserunt dolor dolor elit deserunt incididunt. Incididunt aute do voluptate dolor irure cillum sint minim.
+          <div id="research-overview">
+            <AnimatedText
+              text="Focus On Research & Development"
+              className="my-8"
+            />
+            <div>
+              <div className="flex flex-wrap mt-4 w-full justify-center items-center">
+                <AnimatePresence>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0, rotateY: 180 }}
+                    whileInView={{
+                      opacity: 1,
+                      scale: 1,
+                      rotateY: 0,
+                      transition: {
+                        ease: "easeOut",
+                        duration: 0.8,
+                      },
+                    }}
+                    className="relative xll:w-2/5 rounded-2xl shadow-news-shadow xl:h-[25rem] h-[26rem] xl:w-4/5"
+                  >
+                    <div className="absolute font-extrabold  text-[28px] ml-2 xss:top-[15%] top-1/3 text-white z-20">
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          scale: 0,
+                        }}
+                        whileInView={{
+                          opacity: 1,
+                          scale: 1,
+                          transition: {
+                            ease: "easeOut",
+                            delay: 0.2,
+                            duration: 0.6,
+                          },
+                        }}
+                        className="left-0 flex w-fit p-2 rounded-2xl bg-white/40 backdrop-blur-md"
+                      >
+                        <AotLogo />
+                      </motion.div>
+                      <div className="mt-4">
+                        <div className="flex gap-4 my-3">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.24,
+                                duration: 0.45,
+                              },
+                            }}
+                            className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
+                          >
+                            <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
+                          </motion.div>
+                          <motion.p
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.3,
+                                duration: 0.6,
+                              },
+                            }}
+                            className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
+                          >
+                            <span className="text-[32px] sm:text-[28px] font-bold font-serif">
+                              4500+&nbsp;
+                            </span>
+                            <span> Publications</span>
+                          </motion.p>
+                        </div>
+                        <div className="flex gap-4 my-3">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.29,
+                                duration: 0.45,
+                              },
+                            }}
+                            className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
+                          >
+                            <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
+                          </motion.div>
+                          <motion.p
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.34,
+                                duration: 0.6,
+                              },
+                            }}
+                            className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
+                          >
+                            <span className="text-[32px]  sm:text-[28px] font-bold font-serif">
+                              45&nbsp;
+                            </span>
+                            Filed Patents
+                          </motion.p>
+                        </div>
+                        <div className="flex gap-4 my-3">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.33,
+                                duration: 0.45,
+                              },
+                            }}
+                            className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
+                          >
+                            <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
+                          </motion.div>
+                          <motion.p
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{
+                              opacity: 1,
+                              scale: 1,
+                              transition: {
+                                ease: "easeOut",
+                                delay: 0.4,
+                                duration: 0.6,
+                              },
+                            }}
+                            className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
+                          >
+                            <span className="text-[32px]  sm:text-[28px] font-bold font-serif">
+                              45+&nbsp;
+                            </span>
+                            Ongoing Projects
+                          </motion.p>
+                        </div>
+                      </div>
+                    </div>
+                    <Image
+                      width={800}
+                      height={800}
+                      src="/research.jpg"
+                      alt=""
+                      className="absolute bg-cover -z-0 w-full xl:h-[25rem] h-[26rem] rounded-2xl shadow-news-shadow "
+                    />
+                  </motion.div>
+                </AnimatePresence>
+                <AnimatePresence>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0, rotateY: 180 }}
+                    whileInView={{
+                      opacity: 1,
+                      scale: 1,
+                      rotateY: 0,
+                      transition: {
+                        ease: "easeOut",
+                        delay: 0.25,
+                        duration: 1,
+                      },
+                    }}
+                    className="p-2 font-sans xll:w-[55%] font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
+                  >
+                    &emsp;&emsp;&emsp;Apart from conducting high quality,
+                    innovative and continually updated course curriculum, the
+                    department of Computer Science & Engineering is engaged in
+                    research in frontier areas through establishment of research
+                    groups. Research interests include Algorithms & Theory of
+                    Computation, Artificial Intelligence, Bioinformatics, Cloud
+                    Computing, Database & Data Mining, Data Analytics, Machine
+                    Learning, Human Computer Interaction, Information & Network
+                    Security, Internet Technology, Image Processing, Mobile
+                    Computing, Pattern Recognition, Program Analysis and
+                    Testing, Parallel & Distributed Computing, Real Time
+                    Systems, Service-Oriented Architecture, Soft Computing,
+                    Software Engineering, Wireless Sensor Networks. With a view
+                    to provide the best exposure to the learners, AOT actively
+                    organizes a number of International Conferences, Student
+                    Research Symposium, Industry Symposium, Innovative Student
+                    Project Contests, Tech Fest along with imparting student
+                    chapter such as IEEE Chapter, etc.
+                  </motion.div>
+                </AnimatePresence>
+                <AnimatePresence>
+                  <motion.div
+                    variants={childitem}
+                    initial="hidden"
+                    whileInView="show"
+                    className="p-2 font-sans mt-2 font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
+                  >
+                    &emsp;&emsp;&emsp;Apart from conducting high quality,
+                    innovative and continually updated course curriculum, the
+                    department of Computer Science & Engineering is engaged in
+                    research in frontier areas through establishment of research
+                    groups. Research interests include Algorithms & Theory of
+                    Computation, Artificial Intelligence, Bioinformatics, Cloud
+                    Computing, Database & Data Mining, Data Analytics, Machine
+                    Learning, Human Computer Interaction, Information & Network
+                    Security, Internet Technology, Image Processing, Mobile
+                    Computing, Pattern Recognition, Program Analysis and
+                    Testing, Parallel & Distributed Computing, Real Time
+                    Systems, Service-Oriented Architecture, Soft Computing,
+                    Software Engineering, Wireless Sensor Networks. With a view
+                    to provide the best exposure to the learners, AOT actively
+                    organizes a number of International Conferences, Student
+                    Research Symposium, Industry Symposium, Innovative Student
+                    Project Contests, Tech Fest along with imparting student
+                    chapter such as IEEE Chapter, etc.
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            </div>
           </div>
+
+          <div id="current-research">
+            <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
+            <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
+              Nisi labore officia consectetur do ex Lorem dolore fugiat est
+              consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit
+              et commodo cillum deserunt dolor reprehenderit adipisicing.
+              Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut
+              proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco
+              est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud
+              elit fugiat culpa deserunt dolor dolor elit deserunt incididunt.
+              Incididunt aute do voluptate dolor irure cillum sint minim.
+            </div>
           </div>
           <div id="past-research">
-          <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-          <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
-            Nisi labore officia consectetur do ex Lorem dolore fugiat est consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit et commodo cillum deserunt dolor reprehenderit adipisicing. Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud elit fugiat culpa deserunt dolor dolor elit deserunt incididunt. Incididunt aute do voluptate dolor irure cillum sint minim.
-          </div>
+            <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
+            <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
+              Nisi labore officia consectetur do ex Lorem dolore fugiat est
+              consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit
+              et commodo cillum deserunt dolor reprehenderit adipisicing.
+              Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut
+              proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco
+              est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud
+              elit fugiat culpa deserunt dolor dolor elit deserunt incididunt.
+              Incididunt aute do voluptate dolor irure cillum sint minim.
+            </div>
           </div>
           <div id="research-facilities">
-          <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-          <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
-            Nisi labore officia consectetur do ex Lorem dolore fugiat est consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit et commodo cillum deserunt dolor reprehenderit adipisicing. Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud elit fugiat culpa deserunt dolor dolor elit deserunt incididunt. Incididunt aute do voluptate dolor irure cillum sint minim.
-          </div>
+            <AnimatedText text="Research Facilities" className="my-8" />
+            <div>
+            <AnimatedTextWord
+              text="Our Valued Partners"
+              className="text-3xl text-[hsl(232,47%,28%)] inline text-center font-bold font-serif italic pt-3"
+            />
+            <motion.div variants={childitem3} initial="hidden" whileInView="show">
+              <Companyslider props={partnerphotos} />
+            </motion.div>
+            </div>
           </div>
         </Layout>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default research
+export default research;

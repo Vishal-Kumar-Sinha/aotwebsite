@@ -39,21 +39,12 @@ export const links = [
           sub: false,
           link: "/ugprograms",
           target: "",
-          // sublink: [
-          //   { name: "Computer Science and Engineering", link: "/", target: "" },
-          //   { name: "Computer Science & Business Systems", link: "/", target: "" },
-          //   { name: "Electronics and Communication  Engineering", link: "/", target: "" },
-          //   { name: "Electrical and Electronics Engineering", link: "/", target: "" },
-          //   { name: "Electrical Engineering", link: "/", target: "" },
-          //   { name: "Mechanical Engineering ", link: "/", target: "" },
-          // ],
         },
         {
           Head: "PG Programs",
           sub: false,
           link: "/pgprograms",
           target: "",
-          // sublink: [{ name: "Master in Computer Applications", link: "/", target: "" }],
         },
         {
           Head: "Resources",

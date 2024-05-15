@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Logo from "../Logo";
 import NavLinks from "./NavLinks";
 import { FaXmark, FaBars, FaMagnifyingGlass } from "react-icons/fa6";
+import Searchbar from "./Searchbar";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -29,9 +30,7 @@ const Nav = () => {
             </div>
           </div>
           <div className="text-2xl md:text-2xl flex xs:gap-14 md:gap-10 gap-20 smm:pl-2 pl-6 items-center pr-3 justify-between llg:hidden">
-            <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
-              <FaMagnifyingGlass />
-            </div>
+            <Searchbar />
             {/* <FaSun /> */}
             <div onClick={() => setOpen(!open)}>
               {open ? <FaXmark /> : <FaBars />}
@@ -47,9 +46,7 @@ const Nav = () => {
           </div>
         </div>
         <ul className="llg:flex hidden items-center gap-10">
-          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
-            <FaMagnifyingGlass />
-          </div>
+          <Searchbar />
           <NavLinks />
           {/* <FaSun /> */}
         </ul>

@@ -42,8 +42,8 @@ export default function Home() {
       transition: {
         ease: "easeOut",
         delay: 0.1,
-        duration: 1,
-        staggerChildren: 0.4,
+        duration: 0.6,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -53,7 +53,7 @@ export default function Home() {
       opacity: 1,
       transition: {
         ease: "easeOut",
-        duration: 1,
+        duration: 0.8,
       },
     },
   };
@@ -64,9 +64,9 @@ export default function Home() {
       rotateY: 0,
       transition: {
         ease: "easeOut",
-        delayChildren: 0.2,
+        delayChildren: 0.1,
         staggerChildren: 0.25,
-        duration: 1,
+        duration: 0.8,
       },
     },
   };

@@ -3,7 +3,6 @@ import {
   FaXmark,
   FaGear,
   FaToolbox,
-  FaWrench,
   FaClock,
   FaLink,
   FaFolderTree,
@@ -20,13 +19,13 @@ const Eventmodal = ({ props }) => {
     <>
       <motion.button
         whileHover={{ x: 5 }}
-        className="font-bold text-[#FA5252] cursor-pointer text-[14px] duration-100 transition-all mt-2"
+        className="font-bold text-[#FA5252] cursor-pointer text-[14px] duration-100 inline-flex transition-all mt-2"
         type="button"
         onClick={() => {
           setShowModal(true);
         }}
-      >
-        <FaArrowRight />
+      >View&nbsp;More&nbsp;
+        <FaArrowRight className="mt-1" />
       </motion.button>
       {showModal ? (
         <>

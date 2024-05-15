@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Logo from "../Logo";
 import Deptlinks from "./Deptlinks";
-import { FaXmark, FaBars, FaSun, FaMagnifyingGlass } from "react-icons/fa6";
+import Searchbar from "./Searchbar";
+import { FaXmark, FaBars } from "react-icons/fa6";
 
 const Deptnav = ({ links }) => {
   const [open, setOpen] = useState(false);
@@ -29,9 +30,7 @@ const Deptnav = ({ links }) => {
             </div>
           </div>
           <div className="text-2xl md:text-2xl flex xs:gap-14 md:gap-10 gap-20 smm:pl-2 pl-6 items-center pr-3 justify-between xll:hidden">
-            <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
-              <FaMagnifyingGlass />
-            </div>
+            <Searchbar />
             {/* <FaSun /> */}
             <div onClick={() => setOpen(!open)}>
               {open ? <FaXmark /> : <FaBars />}
@@ -39,9 +38,7 @@ const Deptnav = ({ links }) => {
           </div>
         </div>
         <ul className="xll:flex hidden items-center gap-10">
-          <div className=" p-1.5 rounded-[50%] content-center cursor-pointer transition-all ease-in-out duration-150 hover:scale-110 active:scale-75">
-            <FaMagnifyingGlass />
-          </div>
+          <Searchbar />
           <Deptlinks links={links} />
           {/* <FaSun /> */}
         </ul>

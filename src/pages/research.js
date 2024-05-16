@@ -12,9 +12,19 @@ import AnimatedText from "@/components/AnimatedText";
 import AnimatedTextWord from "@/components/AnimatedTextWord";
 import { AotLogo } from "@/components/Icons";
 import Companyslider from "@/components/banner/Companyslider";
+import Researchslider from "@/components/banner/Researchslider";
+import Slidertext3d from "@/components/banner/Slidertext3d";
+import News from "@/components/banner/News";
+import Slider from "@/components/banner/Slider";
 //dictionary import
 import { researchbanner } from "@/dictionary/Bannerlist";
-import { partnerphotos } from "@/dictionary/Researchlinks";
+import {
+  partnerphotos,
+  researchconnect,
+  labphotos,
+  researchnewslinks,
+  testimoniallist,
+} from "@/dictionary/Researchlinks";
 
 const research = () => {
   const parent = {
@@ -36,7 +46,7 @@ const research = () => {
       transition: {
         ease: "easeOut",
         staggerChildren: 0.2,
-        duration: 0.8,
+        duration: 0.6,
       },
     },
   };
@@ -77,6 +87,21 @@ const research = () => {
       },
     },
   };
+  const childitem5 = {
+    hidden: {
+      opacity: 0,
+      scale: 0,
+    },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: "easeOut",
+        staggerChildren: 0.2,
+        duration: 0.6,
+      },
+    },
+  };
   return (
     <>
       <Head>
@@ -87,7 +112,12 @@ const research = () => {
       <main className="flex w-full flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
         <Banner sliderItems={researchbanner} />
         <Layout className="!pt-8">
-          <div id="research-overview">
+          <motion.div
+            id="research-overview"
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+          >
             <AnimatedText
               text="Focus On Research & Development"
               className="my-8"
@@ -96,33 +126,12 @@ const research = () => {
               <div className="flex flex-wrap mt-4 w-full justify-center items-center">
                 <AnimatePresence>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0, rotateY: 180 }}
-                    whileInView={{
-                      opacity: 1,
-                      scale: 1,
-                      rotateY: 0,
-                      transition: {
-                        ease: "easeOut",
-                        duration: 0.8,
-                      },
-                    }}
+                    variants={childitem3}
                     className="relative xll:w-2/5 rounded-2xl shadow-news-shadow xl:h-[25rem] h-[26rem] xl:w-4/5"
                   >
                     <div className="absolute font-extrabold  text-[28px] ml-2 xss:top-[15%] top-1/3 text-white z-20">
                       <motion.div
-                        initial={{
-                          opacity: 0,
-                          scale: 0,
-                        }}
-                        whileInView={{
-                          opacity: 1,
-                          scale: 1,
-                          transition: {
-                            ease: "easeOut",
-                            delay: 0.2,
-                            duration: 0.6,
-                          },
-                        }}
+                        variants={childitem5}
                         className="left-0 flex w-fit p-2 rounded-2xl bg-white/40 backdrop-blur-md"
                       >
                         <AotLogo />
@@ -130,31 +139,13 @@ const research = () => {
                       <div className="mt-4">
                         <div className="flex gap-4 my-3">
                           <motion.div
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.24,
-                                duration: 0.45,
-                              },
-                            }}
+                            variants={childitem5}
                             className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
                           >
                             <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
                           </motion.div>
                           <motion.p
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.3,
-                                duration: 0.6,
-                              },
-                            }}
+                            variants={childitem5}
                             className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
                           >
                             <span className="text-[32px] sm:text-[28px] font-bold font-serif">
@@ -165,31 +156,13 @@ const research = () => {
                         </div>
                         <div className="flex gap-4 my-3">
                           <motion.div
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.29,
-                                duration: 0.45,
-                              },
-                            }}
+                            variants={childitem5}
                             className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
                           >
                             <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
                           </motion.div>
                           <motion.p
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.34,
-                                duration: 0.6,
-                              },
-                            }}
+                            variants={childitem5}
                             className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
                           >
                             <span className="text-[32px]  sm:text-[28px] font-bold font-serif">
@@ -200,31 +173,13 @@ const research = () => {
                         </div>
                         <div className="flex gap-4 my-3">
                           <motion.div
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.33,
-                                duration: 0.45,
-                              },
-                            }}
+                            variants={childitem5}
                             className="bg-white h-fit w-fit p-1.5 rounded-[50%]"
                           >
                             <FaGraduationCap className="text-3xl sm:text-2xl text-[hsl(232,47%,28%)]" />
                           </motion.div>
                           <motion.p
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{
-                              opacity: 1,
-                              scale: 1,
-                              transition: {
-                                ease: "easeOut",
-                                delay: 0.4,
-                                duration: 0.6,
-                              },
-                            }}
+                            variants={childitem5}
                             className="text-2xl sm:text-xl font-serif p-1 font-[550] text-white"
                           >
                             <span className="text-[32px]  sm:text-[28px] font-bold font-serif">
@@ -246,17 +201,7 @@ const research = () => {
                 </AnimatePresence>
                 <AnimatePresence>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0, rotateY: 180 }}
-                    whileInView={{
-                      opacity: 1,
-                      scale: 1,
-                      rotateY: 0,
-                      transition: {
-                        ease: "easeOut",
-                        delay: 0.25,
-                        duration: 1,
-                      },
-                    }}
+                    variants={childitem3}
                     className="p-2 font-sans xll:w-[55%] font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
                   >
                     &emsp;&emsp;&emsp;Apart from conducting high quality,
@@ -308,46 +253,258 @@ const research = () => {
                 </AnimatePresence>
               </div>
             </div>
-          </div>
-
-          <div id="current-research">
-            <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-            <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
-              Nisi labore officia consectetur do ex Lorem dolore fugiat est
-              consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit
-              et commodo cillum deserunt dolor reprehenderit adipisicing.
-              Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut
-              proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco
-              est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud
-              elit fugiat culpa deserunt dolor dolor elit deserunt incididunt.
-              Incididunt aute do voluptate dolor irure cillum sint minim.
-            </div>
-          </div>
-          <div id="past-research">
-            <AnimatedText text="Passion Fuels Purpose!" className="my-8" />
-            <div className="flex flex-wrap bg-orange-500 rounded-2xl p-4 w-full">
-              Nisi labore officia consectetur do ex Lorem dolore fugiat est
-              consequat. Fugiat sint aute qui non. Mollit ullamco occaecat velit
-              et commodo cillum deserunt dolor reprehenderit adipisicing.
-              Deserunt magna aliquip minim dolore dolor consequat ipsum esse ut
-              proident. Qui esse reprehenderit tempor ad ullamco commodo ullamco
-              est exercitation nisi qui id. Nostrud occaecat eiusmod nostrud
-              elit fugiat culpa deserunt dolor dolor elit deserunt incididunt.
-              Incididunt aute do voluptate dolor irure cillum sint minim.
-            </div>
-          </div>
-          <div id="research-facilities">
-            <AnimatedText text="Research Facilities" className="my-8" />
-            <div>
-            <AnimatedTextWord
-              text="Our Valued Partners"
-              className="text-3xl text-[hsl(232,47%,28%)] inline text-center font-bold font-serif italic pt-3"
+          </motion.div>
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            id="current-research"
+            className="pt-[3.9rem]"
+          >
+            <AnimatedText
+              text="Ongoing Projects & Consultancy"
+              className="my-4"
             />
-            <motion.div variants={childitem3} initial="hidden" whileInView="show">
-              <Companyslider props={partnerphotos} />
-            </motion.div>
+            <div>
+              <div className="flex flex-wrap justify-center mx-4 ">
+                <AnimatePresence>
+                  <motion.div
+                    variants={childitem2}
+                    className="p-3 flex gxl:justify-evenly justify-end llg:hidden"
+                  >
+                    <div>
+                      <Image
+                        width={2000}
+                        height={2000}
+                        className="w-[95vw] sm:h-full h-[50vh] bg-transparent mix-blend-multiply "
+                        src="/research.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
+                <div className="inline-flex">
+                  <div className=" p-2 rounded-tl-3xl rounded-br-3xl shadow-news-shadow z-20 llg:w-[63%] lg:w-full self-center h-fit">
+                    <div>
+                      <AnimatePresence>
+                        <motion.p
+                          variants={childitem}
+                          className=" flex text-justify font-medium text-gray-800 pt-1 px-2 text-[17px] leading-normal italic"
+                        >
+                          &emsp;&emsp;&emsp;Enim adipisicing culpa aliquip
+                          voluptate ullamco nisi consequat non consectetur
+                          pariatur sit. Minim exercitation non aliquip
+                          adipisicing commodo sunt aliqua Lorem exercitation.
+                          Excepteur cupidatat id commodo voluptate in id
+                          consequat irure nulla. Anim laboris consectetur duis
+                          enim amet officia in do cupidatat incididunt proident.
+                        </motion.p>
+                        <motion.p
+                          variants={childitem}
+                          className=" flex text-justify font-medium text-gray-800 pt-1 px-2 text-[17px] leading-normal italic"
+                        >
+                          &emsp;&emsp;&emsp;Enim adipisicing culpa aliquip
+                          voluptate ullamco nisi consequat non consectetur
+                          pariatur sit. Minim exercitation non aliquip
+                          adipisicing commodo sunt aliqua Lorem exercitation.
+                          Excepteur cupidatat id commodo voluptate in id
+                          consequat irure nulla. Anim laboris consectetur duis
+                          enim amet officia in do cupidatat incididunt proident.
+                        </motion.p>
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                  <AnimatePresence>
+                    <motion.div
+                      variants={childitem2}
+                      className="p-3 llg:w-[36%] rounded-r-2xl z-0 flex gxl:justify-evenly justify-end lg:hidden"
+                    >
+                      <div>
+                        <Image
+                          height={2000}
+                          width={2000}
+                          className="llg:w-[36vw] llg:h-[60vh] rounded-r-2xl h-full "
+                          src="/research.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+              </div>
             </div>
-          </div>
+            <div className="mt-1 flex flex-wrap">
+              <div className="bg-[hsl(232,47%,28%)] w-full h-1 mt-[18px] rounded-2xl"></div>
+              <Link
+                href="/researchproject"
+                className="absolute bg-gray-100 px-3 py-2 w-fit rounded-3xl text-center font-bold sm:left-[47%] left-[75%] hover:shadow-inside-shadow hover:scale-90 active:scale-110 transition-all duration-300"
+              >
+                View Details
+              </Link>
+            </div>
+          </motion.div>
+
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            id="past-research"
+            className="pt-[3.9rem]"
+          >
+            <AnimatedText text="Hall Of Fame" className="my-4" />
+            <div className="grid align-middle xss:gap-y-2 xss:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center content-center text-center grid-cols-5 p-2 gap-2">
+              <motion.div variants={childitem5} className=" ">
+                <p className="text-6xl my-2 font-extrabold">640+</p>
+                <p className="font-semibold">Patents</p>
+              </motion.div>
+              <motion.div variants={childitem5} className="">
+                <p className="text-6xl font-extrabold">640+</p>
+                <p className="font-semibold">Publications</p>
+              </motion.div>
+              <motion.div variants={childitem5} className="">
+                <p className="text-6xl font-extrabold">640+</p>
+                <p className="font-semibold">Centres Of Excellence</p>
+              </motion.div>
+              <motion.div variants={childitem5} className="">
+                <p className="text-6xl font-extrabold">640+</p>
+                <p className="font-semibold">Workspaces</p>
+              </motion.div>
+              <div className="sm:hidden llg:hidden"></div>
+              <motion.div variants={childitem5} className="">
+                <p className="text-6xl font-extrabold">640+</p>
+                <p variants={childitem5} className="font-semibold">Faculties</p>
+              </motion.div>
+            </div>
+            <div>
+              <AnimatedText
+                text="Publications and Ceremonies"
+                className="!text-3xl mt-2 text-center font-serif font-bold !text-[hsl(232,47%,28%)] italic"
+              />
+              <motion.div
+                variants={childitem}
+                className="p-2 font-sans font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
+              >
+                &emsp;&emsp;&emsp;Ex ullamco ut enim excepteur aliqua est eu
+                commodo. Ex cupidatat irure velit ea ipsum. Non ea excepteur
+                labore do excepteur culpa deserunt pariatur magna. Ipsum ipsum
+                ad consectetur aliquip duis in voluptate minim. Mollit sunt do
+                duis labore non incididunt dolore fugiat consequat deserunt.
+              </motion.div>
+              <motion.div variants={childitem2}>
+                <Slidertext3d props={labphotos} />
+              </motion.div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            id="research-facilities"
+            className="pt-[3.5rem]"
+          >
+            <AnimatedText text="Research Facilities" />
+            <div className="mb-2" id="partners">
+              <AnimatedText
+                text="Our Valued Partners & Funding Agencies"
+                className="!text-3xl my-2 text-center font-serif font-bold !text-[hsl(232,47%,28%)] italic"
+              />
+              <motion.div variants={childitem}>
+                <Companyslider props={partnerphotos} />
+              </motion.div>
+            </div>
+            <div className="mt-6">
+              <AnimatedText
+                text="Connect, Collocate, Collaborate"
+                className="!text-3xl my-2 text-center font-serif font-bold !text-[hsl(232,47%,28%)] italic"
+              />
+              <div className="relative">
+                <motion.div variants={childitem2} className="absolute">
+                  <Image
+                    width={1000}
+                    height={1000}
+                    className="h-[24rem] xs:w-[20rem] rounded-l-2xl w-[24rem]"
+                    src="/research.jpg"
+                    alt=""
+                  />
+                </motion.div>
+                <motion.div
+                  variants={childitem}
+                  className="xs:ml-[10vw] ml-[20vw]"
+                >
+                  <Researchslider rprops={researchconnect} />
+                </motion.div>
+              </div>
+            </div>
+            <div className="mt-6" id="researchlabs">
+              <AnimatedText
+                text="Research Laboratories"
+                className="!text-3xl my-2 text-center font-serif font-bold !text-[hsl(232,47%,28%)] italic"
+              />
+              <motion.div
+                variants={childitem}
+                className="p-2 font-sans font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
+              >
+                &emsp;&emsp;&emsp;More than a dozen Campus buildings are used
+                exclusively for scientific research. Their interconnected labs,
+                clusters, and offices encourage scientists to cut across
+                boundaries and collaborate in the chemical, biological,
+                physical, engineering, and computational sciences.
+              </motion.div>
+              <motion.div variants={childitem3}>
+                <Slidertext3d props={labphotos} />
+              </motion.div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            id="newsletters"
+            className="pt-[3.9rem]"
+          >
+            <AnimatedText text="Research & Development Newsletters" />
+            <div className="my-3">
+              <motion.p
+                className="p-2 font-sans font-medium text-justify text-lg xll:ml-5 xl:mx-4 lg:mx-3"
+                variants={childitem}
+              >
+                &emsp;&emsp;&emsp;Quis exercitation irure laborum non proident.
+                Duis non culpa ex adipisicing ullamco aute dolore culpa.
+                Consectetur reprehenderit fugiat cupidatat proident do sunt
+                tempor consectetur. Eu eiusmod id minim pariatur commodo fugiat
+                Lorem proident. Quis exercitation irure laborum non proident.
+                Duis non culpa ex adipisicing ullamco aute dolore culpa.
+                Consectetur reprehenderit fugiat cupidatat proident do sunt
+                tempor consectetur. Eu eiusmod id minim pariatur commodo fugiat
+                Lorem proident.
+              </motion.p>
+            </div>
+            <motion.div variants={childitem3} className="my-2">
+              <News props={researchnewslinks} newsview="/newsview" />
+            </motion.div>
+          </motion.div>
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            id="testimonials"
+            className="pt-[3.9rem]"
+          >
+            <AnimatedText text="Testimonials" />
+            <div className="my-3">
+              <AnimatedTextWord
+                text="ASPIRE in the Words of Industry Leaders"
+                className="text-3xl text-[hsl(232,47%,28%)] inline text-center font-bold font-serif pt-3"
+              />
+            </div>
+            <motion.div
+              variants={childitem3}
+              className="flex my-2 flex-wrap -mx-1 lg:-mx-4 justify-center"
+            >
+              <Slider clients={testimoniallist} />
+            </motion.div>
+          </motion.div>
         </Layout>
       </main>
     </>

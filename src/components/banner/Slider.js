@@ -15,9 +15,7 @@ const Slider = ({ clients }) => {
   let slideInterval;
   useEffect(() => {
     slideInterval = setTimeout(() => {
-      setCurrent(
-        current === clients.length - 1 ? 0 : current + 1
-      );
+      setCurrent(current === clients.length - 1 ? 0 : current + 1);
     }, 5000);
     return () => clearTimeout(slideInterval);
   });
@@ -53,6 +51,8 @@ const Slider = ({ clients }) => {
                       transition={{ ease: "easeIn", delay: 0.2, duration: 2 }}
                     >
                       <Image
+                        width={2000}
+                        height={2000}
                         src={item.pic}
                         alt="1"
                         className=" w-40 h-40 rounded-[50%] border border-transparent shadow-outside-shadow"

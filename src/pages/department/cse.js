@@ -14,6 +14,7 @@ import Facultycard from "@/components/Facultycard";
 import News from "@/components/banner/News";
 import Slidertext3d from "@/components/banner/Slidertext3d";
 import { AotLogo } from "@/components/Icons";
+import Companyslider from "@/components/banner/Companyslider";
 //import dictionaries
 import { csebanner } from "@/dictionary/Bannerlist";
 import {
@@ -23,19 +24,13 @@ import {
   cseevents,
   csefaculty,
   csestaff,
+  companyphotos,
 } from "@/dictionary/CSELinks";
 import { newslinks } from "@/dictionary/Newslinks";
 
 //import images
 import placement1 from "@/assets/images/placement.png";
 import research1 from "@/assets/images/research.jpg";
-import a1 from "@/assets/images/accreditation/capgemini.png";
-import a2 from "@/assets/images/accreditation/cisco.png";
-import a3 from "@/assets/images/accreditation/cyient.png";
-import a4 from "@/assets/images/accreditation/google.png";
-import a5 from "@/assets/images/accreditation/tcs.png";
-import a6 from "@/assets/images/accreditation/techmahindra.png";
-import a7 from "@/assets/images/accreditation/wipro.png";
 
 const cse = () => {
   const parent = {
@@ -639,70 +634,13 @@ const cse = () => {
                 </div>
               </motion.div>
             </div>
-            <div className="flex flex-wrap rounded-2xl p-2 w-full">
+            <div className="p-2 w-full">
               <AnimatedText
                 text="Our Recruiters"
                 className="!text-3xl text-center font-serif !text-[hsl(232,47%,28%)] italic"
               />
-              <motion.div variants={parent}>
-                <div className="grid gap-8 xs:grid-cols-1 smmy:grid-cols-2 lg:grid-cols-3 grid-cols-4 items-center  p-4 mt-1.5">
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-62">
-                      <Image src={a1} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-20">
-                      <Image src={a2} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-60">
-                      <Image src={a3} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-56">
-                      <Image src={a4} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-60">
-                      <Image src={a5} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="xs:w-56 w-62">
-                      <Image src={a6} alt="" />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    variants={childitem4}
-                    className=" rounded-3xl p-3 flex justify-center cursor-pointer shadow-news-shadow hover:shadow-inside-shadow hover:scale-90 transition-all ease-in-out duration-300"
-                  >
-                    <div className="w-44">
-                      <Image src={a7} alt="" />
-                    </div>
-                  </motion.div>
-                </div>
+              <motion.div variants={childitem}>
+                <Companyslider props={companyphotos} />
               </motion.div>
             </div>
             <div className="mt-1 flex flex-wrap">

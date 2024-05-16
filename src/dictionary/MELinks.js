@@ -50,6 +50,16 @@ export const melinks = [
   },
 ];
 
+export const companyphotos = [
+  "/company/capgemini.png",
+  "/company/cisco.png",
+  "/company/cyient.png",
+  "/company/google.png",
+  "/company/tcs.png",
+  "/company/techmahindra.png",
+  "/company/wipro.png",
+];
+
 export const mephotos = [
   {
     title: "Active participation",

@@ -3,7 +3,6 @@ export const calinks = [
     name: "Home",
     submenu: false,
     href: "/department/ca",
-
   },
   {
     name: "People",
@@ -31,23 +30,33 @@ export const calinks = [
   {
     name: "Research",
     submenu: false,
-    href: "/department/ca#research" ,
+    href: "/department/ca#research",
   },
   {
     name: "Achievements",
     submenu: false,
-    href: "/department/ca#achievements" ,
+    href: "/department/ca#achievements",
   },
   {
     name: "Join Us",
     submenu: false,
-    href: "/career" ,
+    href: "/career",
   },
   {
     name: "Contact",
     submenu: false,
-    href: "/contacts" ,
+    href: "/contacts",
   },
+];
+
+export const companyphotos = [
+  "/company/capgemini.png",
+  "/company/cisco.png",
+  "/company/cyient.png",
+  "/company/google.png",
+  "/company/tcs.png",
+  "/company/techmahindra.png",
+  "/company/wipro.png",
 ];
 
 export const caphotos = [
@@ -91,15 +100,18 @@ export const caevents = [
 export const calabs = [
   {
     title: "DATA STRUCTURE LABORATORY",
-    detail: "41 HP Computers, Fedora 23, GCC Compiler, JDK, Visual Algos,jdoodle portal, a2oj portal.",
+    detail:
+      "41 HP Computers, Fedora 23, GCC Compiler, JDK, Visual Algos,jdoodle portal, a2oj portal.",
   },
   {
     title: "COMPUTER ARCHITECTURE LABORATORY",
-    detail: "42 HP Computers, Fedora 23, Digital Logic Design, Comp Arch Simulation using HASE III.",
+    detail:
+      "42 HP Computers, Fedora 23, Digital Logic Design, Comp Arch Simulation using HASE III.",
   },
   {
     title: "COMPUTER ENGINEERING LABORATORY",
-    detail: "41 HP Computers, Fedora 23, GCC Compiler, JDK, Python, R,jdoodle portal, a2oj portal.",
+    detail:
+      "41 HP Computers, Fedora 23, GCC Compiler, JDK, Python, R,jdoodle portal, a2oj portal.",
   },
   {
     title: "GOOGLE INNOVATION LABORATORY",
@@ -107,13 +119,14 @@ export const calabs = [
   },
   {
     title: "NETWORK & CYBER SECURITY LABORATORY",
-    detail: "41 HP Computers, Fedora 23, NET-Simulator, Metasploit Framework, ZAP.",
+    detail:
+      "41 HP Computers, Fedora 23, NET-Simulator, Metasploit Framework, ZAP.",
   },
   {
     title: "SYSTEM ENGINEERING LABORATORY",
-    detail: "42 HP Computers, Fedora 23, JDK, PHP/MySQL, Python,jdoodle portal, a2oj portal.",
+    detail:
+      "42 HP Computers, Fedora 23, JDK, PHP/MySQL, Python,jdoodle portal, a2oj portal.",
   },
-  
 ];
 
 export const cafaculty = [

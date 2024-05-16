@@ -74,9 +74,11 @@ export const links = [
       name: "Research",
       submenu: false,
       sublinks: [
-        { name: "Current Research", link: "/research" },
+        { name: "Research Overview", link: "/research" },
+        { name: "Current Research", link: "/research#current-research" },
         { name: "Past Research", link: "/research#past-research" },
         { name: "Research Facilities", link: "/research#research-facilities" },
+        { name: "Research Newsletters", link: "/research#newsletters" },
       ],
     },
     {

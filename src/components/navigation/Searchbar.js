@@ -4,34 +4,16 @@ import { motion } from "framer-motion";
 import FuzzySearch from "fuzzy-search";
 import Link from "next/link";
 
-const people = [
-  {
-    name: "Jesse",
-    details: "Seattle",
-    target: "",
-    link: "/",
-  },
-  {
-    name: "dvsDJesse",
-    details: "Sdgdsgeattle",
-    target: "",
-    link: "/contacts",
-  },
-  {
-    name: "JesgvsGse",
-    details: "SeattlegSDGs",
-    target: "",
-    link: "/",
-  },
-];
+import { searchlink } from "@/dictionary/SearchLink";
 
 const Searchbar = () => {
   const [showSModal, setShowSModal] = useState(false);
   const [anslen, setanslen] = useState(1);
   const [ans, setans] = useState(null);
   const submitSearch = (event) => {
-    const searcher = new FuzzySearch(people, ["name"], {
+    const searcher = new FuzzySearch(searchlink, ["name", "details"], {
       caseSensitive: false,
+      sort: true,
     });
     let item = event.target.value;
     console.log(item);
@@ -75,9 +57,17 @@ const Searchbar = () => {
             }}
             className="smmy:top-[4.2rem] lg:top-[4.7rem] llg:top-[4.5rem] bg-black bg-opacity-25 backdrop-blur-md flex fixed inset-0 z-40 overflow-hidden outline-none focus:outline-none"
           ></div>
-          <motion.div variants={parent} initial="hidden" whileInView="show" className="fixed z-50 justify-self-center shadow-outside-shadow rounded-3xl bg-white top-[5.2rem] inset-0 h-1/2 sm:w-[95%] w-4/5 ggxl:w-3/5">
+          <motion.div
+            variants={parent}
+            initial="hidden"
+            whileInView="show"
+            className="fixed z-50 justify-self-center shadow-outside-shadow rounded-3xl bg-white top-[5.2rem] inset-0 h-1/2 sm:w-[95%] w-4/5 ggxl:w-3/5"
+          >
             <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-              <motion.div variants={parent} className="relative z-0 w-3/4 group">
+              <motion.div
+                variants={parent}
+                className="relative z-0 w-3/4 group"
+              >
                 <input
                   type="text"
                   name="floating_search"
@@ -111,13 +101,24 @@ const Searchbar = () => {
               </motion.button>
             </div>
             {/*body*/}
-            <div className="overflow-y-auto ml-4 p-2 mr-[10%] ">
+            <div className="overflow-y-auto h-[70%] scrlbr ml-4 p-2 mr-[10%] ">
               {ans !== null ? (
                 <div>
                   {anslen !== 0 ? (
-                    ans.map((r, i) => <Link href={r.link} target={r.target}><p className="my-2 pl-2 font-medium text-lg rounded-md hover:bg-gray-300/50 hover:text-accent transition-all duration-200 ease-in-out" key={i}>{r.name}</p></Link>)
+                    ans.map((r, i) => (
+                      <Link href={r.link} target={r.target}>
+                        <p
+                          className="my-2 pl-2 font-medium text-lg rounded-md hover:bg-gray-300/50 hover:text-accent transition-all duration-200 ease-in-out"
+                          key={i}
+                        >
+                          {r.name}
+                        </p>
+                      </Link>
+                    ))
                   ) : (
-                    <p className="text-2xl font-serif text-accent italic text-center">No Result Found... !</p>
+                    <p className="text-2xl font-serif text-accent italic text-center">
+                      No Result Found... !
+                    </p>
                   )}
                 </div>
               ) : (

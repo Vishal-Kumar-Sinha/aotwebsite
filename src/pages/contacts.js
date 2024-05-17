@@ -90,7 +90,7 @@ const contacts = () => {
           </div>
           <AnimatePresence>
             <motion.div variants={parent} initial="hidden" whileInView="show">
-              <div className="flex flex-wrap w-full xss:overflow-x-auto justify-center">
+              <div id="depts" className="flex flex-wrap w-full xss:overflow-x-auto justify-center">
                 <div className="grid grid-cols-2 smmy:grid-cols-1 xll:gap-10 ">
                   <motion.div
                     variants={childitem}
@@ -314,6 +314,7 @@ const contacts = () => {
               </div>
               <div className="xss:overflow-x-auto">
                 <motion.div
+                  id="placementdepts"
                   variants={childitem} initial={{ opacity: 0, scale: 0, rotateY: 180 }}
                   whileInView={{
                     opacity: 1,
@@ -358,6 +359,7 @@ const contacts = () => {
                   </div>
                 </motion.div>
                 <motion.div
+                id="ionzone"
                   variants={childitem} initial={{ opacity: 0, scale: 0, rotateY: 180 }}
                   whileInView={{
                     opacity: 1,

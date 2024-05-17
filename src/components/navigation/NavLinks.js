@@ -35,7 +35,7 @@ const NavLinks = () => {
                     {mysublinks.sub === true ? (
                       <li
                         key={indexinner1}
-                        className="rounded-sm relative nvli head px-3 py-1"
+                        className="rounded-sm relative m-1 nvli head px-3 py-1"
                       >
                         <button
                           aria-haspopup="true"
@@ -53,36 +53,32 @@ const NavLinks = () => {
                           className="bg-white w-[25vw] tail border absolute rounded-sm top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32"
                         >
                           {mysublinks.sublink.map((slink) => (
-                            <li
-                              key={slink.name}
-                              className="px-3 head py-1 hover:bg-gray-200"
-                            >
-                              <Link
-                                href={slink.link}
-                                target={slink.target}
-                                className="hover:text-primary text-sm text-gray-600"
+                            <Link href={slink.link} target={slink.target}>
+                              <li
+                                key={slink.name}
+                                className="px-3 head py-1 hover:text-primary m-1 text-sm text-gray-600 hover:bg-gray-200"
                               >
                                 {slink.name}
-                              </Link>
-                            </li>
+                              </li>
+                            </Link>
                           ))}
                         </ul>
                       </li>
                     ) : (
-                      <li
-                        key={indexinner1}
-                        className="rounded-sm relative nvli head px-3 py-1"
-                      >
-                        <button
-                          aria-haspopup="false"
-                          aria-controls="menu-lang"
-                          className="w-full text-left nvbtn flex items-center outline-none focus:outline-none head"
+                      <Link href={mysublinks.link} target={mysublinks.target}>
+                        <li
+                          key={indexinner1}
+                          className="rounded-sm m-1 relative hover:text-primary hover:bg-gray-200 head px-3 py-1"
                         >
-                          <Link href={mysublinks.link} target={mysublinks.target} className="pr-1 flex-1">{mysublinks.Head}</Link>
-    
-                        </button>
-                        
-                      </li>
+                          <button
+                            aria-haspopup="false"
+                            aria-controls="menu-lang"
+                            className="w-full text-left  flex pr-1 flex-1 items-center outline-none focus:outline-none head"
+                          >
+                            {mysublinks.Head}
+                          </button>
+                        </li>
+                      </Link>
                     )}
                   </>
                 ))}
@@ -92,18 +88,18 @@ const NavLinks = () => {
                 <div className="mb-2">
                   <div className="w-4 h-4 left-3 absolute -mt-2 bg-white rotate-45"></div>
                 </div>
-                {link.sublinks.map((slink) => (
-                  <div
-                    key={slink.name}
-                    className="rounded-sm relative px-3 py-1 hover:bg-gray-200"
-                  >
-                    <li className="text-sm font-semibold my-1.5">
-                      <Link href={slink.link} className="hover:text-primary">
+                <div className="pt-1">
+                  {link.sublinks.map((slink) => (
+                    <Link href={slink.link}>
+                      <li
+                        key={slink.name}
+                        className="font-semibold m-1 hover:text-primary px-3 py-1 hover:bg-gray-200"
+                      >
                         {slink.name}
-                      </Link>
-                    </li>
-                  </div>
-                ))}
+                      </li>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -138,85 +134,70 @@ const NavLinks = () => {
                     <div key={slinks.Head}>
                       {slinks.sub === true ? (
                         <div>
-                        <h1
-                          onClick={() =>
-                            subHeading !== slinks.Head
-                              ? setSubHeading(slinks.Head)
-                              : setSubHeading("")
-                          }
-                          className="py-3 pl-7 font-semibold llg:pr-0 pr-5 flex justify-between items-center"
-                        >
-                          {slinks.Head}
+                          <h1
+                            onClick={() =>
+                              subHeading !== slinks.Head
+                                ? setSubHeading(slinks.Head)
+                                : setSubHeading("")
+                            }
+                            className="py-3 pl-7 font-semibold llg:pr-0 pr-5 flex justify-between items-center"
+                          >
+                            {slinks.Head}
 
-                          <span className="text-xl llg:mt-1 llg:ml-2 inline">
-                            {subHeading === slinks.Head ? (
-                              <FaAngleUp />
-                            ) : (
-                              <FaAngleDown />
-                            )}
-                          </span>
-                        </h1>
-                        <div
-                          className={`${
-                            subHeading === slinks.Head ? "llg:hidden" : "hidden"
-                          }`}
-                        >
-                          {slinks.sublink.map((slink) => (
-                            <li key={slink.name} className="py-2 pl-14 pr-4">
+                            <span className="text-xl llg:mt-1 llg:ml-2 inline">
+                              {subHeading === slinks.Head ? (
+                                <FaAngleUp />
+                              ) : (
+                                <FaAngleDown />
+                              )}
+                            </span>
+                          </h1>
+                          <div
+                            className={`${
+                              subHeading === slinks.Head
+                                ? "llg:hidden"
+                                : "hidden"
+                            }`}
+                          >
+                            {slinks.sublink.map((slink) => (
                               <Link href={slink.link} target={slink.target}>
-                                {slink.name}
+                                <li
+                                  key={slink.name}
+                                  className="py-2 pl-14 pr-4"
+                                >
+                                  {slink.name}
+                                </li>
                               </Link>
-                            </li>
-                          ))}
+                            ))}
+                          </div>
                         </div>
-                      </div>
                       ) : (
-                        <div>
-                        <h1
+                        <Link
                           onClick={() =>
                             subHeading !== slinks.Head
                               ? setSubHeading(slinks.Head)
                               : setSubHeading("")
                           }
-                          className="py-3 pl-7 font-semibold llg:pr-0 pr-5 flex justify-between items-center"
+                          href={slinks.link}
+                          target={slinks.target}
                         >
-                          <Link href={slinks.link} target={slinks.target}>
-                                {slinks.Head}
-                              </Link>
-
-                          {/* <span className="text-xl llg:mt-1 llg:ml-2 inline">
-                            {subHeading === slinks.Head ? (
-                              <FaAngleUp />
-                            ) : (
-                              <FaAngleDown />
-                            )}
-                          </span> */}
-                        </h1>
-                        {/* <div
-                          className={`${
-                            subHeading === slinks.Head ? "llg:hidden" : "hidden"
-                          }`}
-                        >
-                          {slinks.sublink.map((slink) => (
-                            <li key={slink.name} className="py-2 pl-14 pr-4">
-                              <Link href={slink.link} target={slink.target}>
-                                {slink.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </div> */}
-                      </div>
+                          <h1 className="py-3 pl-7 font-semibold llg:pr-0 pr-5 flex justify-between items-center">
+                            {slinks.Head}
+                          </h1>
+                        </Link>
                       )}
                     </div>
                   ))
                 : link.sublinks.map((slink) => (
-                    <div key={slink.name}>
-                      <div>
-                        <li className="py-2 pl-7 font-semibold">
-                          <Link href={slink.link}>{slink.name}</Link>
-                        </li>
+                    <Link href={slink.link}>
+                      <div key={slink.name}>
+                        <div>
+                          <li className="py-2 pl-7 font-semibold">
+                            {slink.name}
+                          </li>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
             </div>
           </div>

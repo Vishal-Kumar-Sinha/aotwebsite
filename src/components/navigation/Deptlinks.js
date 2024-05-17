@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaAngleUp, FaAngleDown} from "react-icons/fa6";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
 const Deptlinks = ({ links }) => {
   const [heading, setHeading] = useState("");
@@ -26,31 +26,27 @@ const Deptlinks = ({ links }) => {
                   <div className="mb-2">
                     <div className="w-4 h-4 left-3 absolute -mt-2 bg-white rotate-45"></div>
                   </div>
-                  {link.sublinks.map((slink) => (
-                    <div key={slink.name} className="rounded-sm relative px-3 py-1 hover:bg-gray-100">
-                      <li className="text-sm font-semibold my-1.5">
-                        <Link href={slink.href} className="hover:text-primary">
+                  <div className="pt-1">
+                    {link.sublinks.map((slink) => (
+                      <Link key={slink.name} href={slink.href}>
+                        <li className="text-sm font-semibold m-1 px-3 py-1 hover:text-primary hover:bg-gray-200">
                           {slink.name}
-                        </Link>
-                      </li>
-                    </div>
-                  ))}
+                        </li>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             ) : (
-              <div>
+              <Link href={link.href}>
                 <button
                   aria-haspopup="true"
                   aria-controls="menu"
-                  className="outline-none focus:outline-none xll:pr-0 mr-5 my-6 rounded-sm flex items-center min-w-32"
+                  className="outline-none hover:text-primary focus:outline-none xll:pr-0 mr-5 my-6 rounded-sm flex items-center min-w-32"
                 >
-                  <li className="pr-1 font-semibold flex-1">
-                    <Link href={link.href} className="hover:text-primary">
-                      {link.name}
-                    </Link>
-                  </li>
+                  <li className="pr-1 font-semibold flex-1">{link.name}</li>
                 </button>
-              </div>
+              </Link>
             )}
           </div>
 
@@ -72,24 +68,30 @@ const Deptlinks = ({ links }) => {
                       {heading === link.name ? <FaAngleUp /> : <FaAngleDown />}
                     </span>
                   </h1>
-                  <div className={`${heading === link.name ? "xll:hidden" : "hidden"}`}>
+                  <div
+                    className={`${
+                      heading === link.name ? "xll:hidden" : "hidden"
+                    }`}
+                  >
                     {link.sublinks.map((slink) => (
-                    <div key={slink}>
-                      <div>
-                        <li className="py-2 pl-7 font-semibold">
-                          <Link href={slink.href}>{slink.name}</Link>
-                        </li>
-                      </div>
-                    </div>
-                  ))}
+                      <Link href={slink.href}>
+                        <div key={slink}>
+                          <div>
+                            <li className="py-2 pl-7 font-semibold">
+                              {slink.name}
+                            </li>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               ) : (
-                <div>
+                <Link href={link.href}>
                   <li className="py-4 flex justify-between items-center xll:pr-0 pr-5">
-                    <Link href={link.href}>{link.name}</Link>
+                    {link.name}
                   </li>
-                </div>
+                </Link>
               )}
             </div>
           </div>

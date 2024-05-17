@@ -159,3 +159,83 @@ export const testimoniallist = [
     msg: '"Sit elit esse do exercitation."',
   },
 ];
+
+export const ongoingresearch = [
+  {
+    title: "SDG 10: Reduced inequalities: Projects in collaboration with Indian Council of Social Science Research (ICSSR)",
+    data: [
+      "Literacy in Promoting Empowerment among the Tribal Woman: A Case Study of Odisha.",
+      "Response to the Offence of Rape by the Criminal Justice System-An Empirial Study in the State of Odisha,Jharkhand and West Bengal.",
+      "Revitalization of Indigenous Languages: Issue and Challenges",
+      "The Root Cause of Maoist Extremism and Development Challenges, A Study of Odisha",
+      "Strengthening Societal Roles in Developing and Implementing an Effective Alcohol Policy in India.",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+      "Intervention of Use of Technology in Government Sponsored Integrated Child Development Services(ICDS) : A Case Study of Khorda District",
+      "Baseline Survey in 13 blocks of Sundargarh Districts and Angul Districts, Odisha",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+    ],
+  },
+  {
+    title: "SDG 3: Reduced inequalities: Projects in collaboration with Indian Council of Social Science Research (ICSSR)",
+    data: [
+      "Literacy in Promoting Empowerment among the Tribal Woman: A Case Study of Odisha.",
+      "Response to the Offence of Rape by the Criminal Justice System-An Empirial Study in the State of Odisha,Jharkhand and West Bengal.",
+      "Revitalization of Indigenous Languages: Issue and Challenges",
+      "The Root Cause of Maoist Extremism and Development Challenges, A Study of Odisha",
+      "Strengthening Societal Roles in Developing and Implementing an Effective Alcohol Policy in India.",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+      "Intervention of Use of Technology in Government Sponsored Integrated Child Development Services(ICDS) : A Case Study of Khorda District",
+      "Baseline Survey in 13 blocks of Sundargarh Districts and Angul Districts, Odisha",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+    ],
+  },
+  {
+    title: "SDG 1: Reduced inequalities: Projects in collaboration with Indian Council of Social Science Research (ICSSR)",
+    data: [
+      "Literacy in Promoting Empowerment among the Tribal Woman: A Case Study of Odisha.",
+      "Response to the Offence of Rape by the Criminal Justice System-An Empirial Study in the State of Odisha,Jharkhand and West Bengal.",
+      "Revitalization of Indigenous Languages: Issue and Challenges",
+      "The Root Cause of Maoist Extremism and Development Challenges, A Study of Odisha",
+      "Strengthening Societal Roles in Developing and Implementing an Effective Alcohol Policy in India.",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+      "Intervention of Use of Technology in Government Sponsored Integrated Child Development Services(ICDS) : A Case Study of Khorda District",
+      "Baseline Survey in 13 blocks of Sundargarh Districts and Angul Districts, Odisha",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+    ],
+  },
+  {
+    title: "SDG 4: Reduced inequalities: Projects in collaboration with Indian Council of Social Science Research (ICSSR)",
+    data: [
+      "Literacy in Promoting Empowerment among the Tribal Woman: A Case Study of Odisha.",
+      "Response to the Offence of Rape by the Criminal Justice System-An Empirial Study in the State of Odisha,Jharkhand and West Bengal.",
+      "Revitalization of Indigenous Languages: Issue and Challenges",
+      "The Root Cause of Maoist Extremism and Development Challenges, A Study of Odisha",
+      "Strengthening Societal Roles in Developing and Implementing an Effective Alcohol Policy in India.",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+      "Intervention of Use of Technology in Government Sponsored Integrated Child Development Services(ICDS) : A Case Study of Khorda District",
+      "Baseline Survey in 13 blocks of Sundargarh Districts and Angul Districts, Odisha",
+      "Roles and Impact of Asha Workers in Combating Covid 19: Case Study Bhubaneswar",
+    ],
+  },
+];
+
+export const summerizeresearch = [
+  {
+    id: 1,
+    title: "Lorem ipsum vdg sfhvxv",
+    area: "Aute consequat veniam proident magna esse occaecat ea adipisicing quis sit occaecat elit minim.",
+    funding: "Voluptate amet veniam, pariatur id ipsum aute, reprehenderit amet et sunt sunt.",
+  },
+  {
+    id: 2,
+    title: "Lorem ipsum vdg sfhvxv",
+    area: "Aute consequat veniam proident magna esse occaecat ea adipisicing quis sit occaecat elit minim.",
+    funding: "Voluptate amet veniam, pariatur id ipsum aute, reprehenderit amet et sunt sunt.",
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum vdg sfhvxv",
+    area: "Aute consequat veniam proident magna esse occaecat ea adipisicing quis sit occaecat elit minim.",
+    funding: "Voluptate amet veniam, pariatur id ipsum aute, reprehenderit amet et sunt sunt.",
+  },
+];

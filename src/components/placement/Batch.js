@@ -49,11 +49,13 @@ const Batch = ({ plyear }) => {
           className="!text-3xl text-center font-serif !text-[hsl(232,47%,28%)] italic"
         />
         <div className="flex flex-wrap rounded-2xl p-4 w-full">
+		<div className="w-full">
           {placementlist.map((placementitem, index) => (
             <div key={index}>
               {placementitem.year === plyear && (
-                <div className="w-full">
-                  <motion.p
+                <>
+                  <div>
+				  <motion.p
                     variants={childitem}
                     className="py-1 font-sans font-normal leading-6 text-lg"
                   >
@@ -76,9 +78,10 @@ const Batch = ({ plyear }) => {
                     them and their performance in recruitment drives amply
                     demonstrate that.
                   </motion.p>
+				  </div>
                   <motion.div
                     variants={childitem2}
-                    className="rounded-2xl mt-6 p-2 shadow-news-shadow overflow-x-auto"
+                    className="rounded-2xl mt-6 p-2 w-full shadow-news-shadow overflow-x-auto"
                   >
                     <table className="table rounded-2xl text-center">
                       <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
@@ -202,6 +205,7 @@ const Batch = ({ plyear }) => {
             </div>
           ))}
         </div>
+		</div>
       </motion.div>
     </AnimatePresence>
   );

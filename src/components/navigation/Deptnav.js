@@ -7,6 +7,9 @@ import { FaXmark, FaBars } from "react-icons/fa6";
 
 const Deptnav = ({ links }) => {
   const [open, setOpen] = useState(false);
+  const sclick = () => {
+    setOpen(false);
+  }
   return (
     <motion.nav
       initial={{ scale: 0.7, rotateX: 360, opacity: 0.2 }}
@@ -49,7 +52,7 @@ const Deptnav = ({ links }) => {
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
-          <Deptlinks links={links} />
+          <Deptlinks sclick={sclick} links={links} />
         </ul>
       </div>
     </motion.nav>

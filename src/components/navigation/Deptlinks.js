@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
-const Deptlinks = ({ links }) => {
+const Deptlinks = ({ links, sclick }) => {
   const [heading, setHeading] = useState("");
   return (
     <>
@@ -74,7 +74,7 @@ const Deptlinks = ({ links }) => {
                     }`}
                   >
                     {link.sublinks.map((slink,i) => (
-                      <Link key={i} href={slink.href}>
+                      <Link onClick={sclick} key={i} href={slink.href}>
                         <div key={slink}>
                           <div>
                             <li className="py-2 pl-7 font-semibold">
@@ -87,7 +87,7 @@ const Deptlinks = ({ links }) => {
                   </div>
                 </div>
               ) : (
-                <Link href={link.href}>
+                <Link onClick={sclick} href={link.href}>
                   <li className="py-4 flex justify-between items-center xll:pr-0 pr-5">
                     {link.name}
                   </li>

@@ -43,47 +43,47 @@ const Batch = ({ plyear }) => {
   let txt = "Placement " + plyear + " Pass Out Batch";
   return (
     <AnimatePresence>
-      <motion.div variants={parent} initial="hidden" whileInView="show">
-        <AnimatedText
-          text={txt}
-          className="!text-3xl text-center font-serif !text-[hsl(232,47%,28%)] italic"
-        />
-        <div className="flex flex-wrap rounded-2xl p-4 w-full">
-		<div className="w-full">
+      <motion.div
+        variants={parent}
+        initial="hidden"
+        whileInView="show"
+      >
+        <div>
           {placementlist.map((placementitem, index) => (
             <div key={index}>
               {placementitem.year === plyear && (
                 <>
-                  <div>
-				  <motion.p
-                    variants={childitem}
-                    className="py-1 font-sans font-normal leading-6 text-lg"
-                  >
-                    &emsp;&emsp;&emsp;AOT continues to redefine success. This
-                    year our students have already achieved{" "}
-                    {placementitem.final} % placement offer (till date) and the
-                    placement graph is expected to rise since many more
-                    companies are scheduled to visit the campus in forthcoming
-                    months.
-                  </motion.p>
-                  <motion.p
-                    variants={childitem}
-                    className="py-1 font-sans font-normal leading-6 text-lg"
-                  >
-                    &emsp;&emsp;&emsp;And this is not a one-time fluke, but an
-                    achievement that occurs consistently year after year.
-                    Equipped with comprehensive training right from the first
-                    semester and well-versed in adequate technologies, our
-                    students are ready to face any and every challenge thrown at
-                    them and their performance in recruitment drives amply
-                    demonstrate that.
-                  </motion.p>
-				  </div>
-                  <motion.div
-                    variants={childitem2}
-                    className="rounded-2xl mt-6 p-2 w-full shadow-news-shadow overflow-x-auto"
-                  >
-                    <table className="table rounded-2xl text-center">
+                  <div className="flex flex-wrap rounded-2xl p-4 w-full">
+                    <AnimatedText
+                      text={txt}
+                      className="!text-3xl text-center font-serif !text-[hsl(232,47%,28%)] italic"
+                    />
+                    <motion.p
+                      variants={childitem}
+                      className="py-1 font-sans font-normal leading-6 text-lg"
+                    >
+                      &emsp;&emsp;&emsp;AOT continues to redefine success. This
+                      year our students have already achieved{" "}
+                      {placementitem.final} % placement offer (till date) and
+                      the placement graph is expected to rise since many more
+                      companies are scheduled to visit the campus in forthcoming
+                      months.
+                    </motion.p>
+                    <motion.p
+                      variants={childitem}
+                      className="py-1 font-sans font-normal leading-6 text-lg"
+                    >
+                      &emsp;&emsp;&emsp;And this is not a one-time fluke, but an
+                      achievement that occurs consistently year after year.
+                      Equipped with comprehensive training right from the first
+                      semester and well-versed in adequate technologies, our
+                      students are ready to face any and every challenge thrown
+                      at them and their performance in recruitment drives amply
+                      demonstrate that.
+                    </motion.p>
+                  </div>
+                  <div className="rounded-2xl mt-6 w-full shadow-news-shadow lg:overflow-scroll">
+                    <table className="table rounded-2xl w-full text-center">
                       <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
                         <tr className="rounded-t-2xl bg-blue-950/20">
                           <th
@@ -96,49 +96,49 @@ const Batch = ({ plyear }) => {
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             CSE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             ECE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             EE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             EIE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             IT
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             ME
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                           >
                             MCA
                           </th>
@@ -146,7 +146,7 @@ const Batch = ({ plyear }) => {
                             <th
                               scope="col"
                               colSpan={1}
-                              className="px-3 py-4 shadow-inside-shadow border-r"
+                              className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
                             >
                               MBA
                             </th>
@@ -154,7 +154,7 @@ const Batch = ({ plyear }) => {
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 rounded-tr-2xl shadow-inside-shadow border-r"
+                            className="px-3 py-4 whitespace-nowrap rounded-tr-2xl shadow-inside-shadow border-r"
                           >
                             Total
                           </th>
@@ -166,27 +166,13 @@ const Batch = ({ plyear }) => {
                             <td className=" px-3 font-bold py-4 border-r">
                               {item.heading}
                             </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.cse}
-                            </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.ece}
-                            </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.ee}
-                            </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.eie}
-                            </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.it}
-                            </td>
-                            <td className=" px-3 py-4 border-r">
-                              {item.me}
-                            </td>
-                            <td className=" px-2 py-4 border-r">
-                              {item.mca}
-                            </td>
+                            <td className=" px-3 py-4 border-r">{item.cse}</td>
+                            <td className=" px-3 py-4 border-r">{item.ece}</td>
+                            <td className=" px-3 py-4 border-r">{item.ee}</td>
+                            <td className=" px-3 py-4 border-r">{item.eie}</td>
+                            <td className=" px-3 py-4 border-r">{item.it}</td>
+                            <td className=" px-3 py-4 border-r">{item.me}</td>
+                            <td className=" px-2 py-4 border-r">{item.mca}</td>
                             {plyear === "2022" ? (
                               <td className=" px-2 py-4 border-r">
                                 {item.mba}
@@ -199,13 +185,12 @@ const Batch = ({ plyear }) => {
                         ))}
                       </tbody>
                     </table>
-                  </motion.div>
-                </div>
+                  </div>
+                </>
               )}
             </div>
           ))}
         </div>
-		</div>
       </motion.div>
     </AnimatePresence>
   );

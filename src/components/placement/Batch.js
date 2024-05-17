@@ -53,29 +53,6 @@ const Batch = ({ plyear }) => {
             <div key={index}>
               {placementitem.year === plyear && (
                 <div className="w-full">
-                  <motion.p
-                    variants={childitem}
-                    className="py-1 font-sans font-normal leading-6 text-lg"
-                  >
-                    &emsp;&emsp;&emsp;AOT continues to redefine success. This
-                    year our students have already achieved{" "}
-                    {placementitem.final} % placement offer (till date) and the
-                    placement graph is expected to rise since many more
-                    companies are scheduled to visit the campus in forthcoming
-                    months.
-                  </motion.p>
-                  <motion.p
-                    variants={childitem}
-                    className="py-1 font-sans font-normal leading-6 text-lg"
-                  >
-                    &emsp;&emsp;&emsp;And this is not a one-time fluke, but an
-                    achievement that occurs consistently year after year.
-                    Equipped with comprehensive training right from the first
-                    semester and well-versed in adequate technologies, our
-                    students are ready to face any and every challenge thrown at
-                    them and their performance in recruitment drives amply
-                    demonstrate that.
-                  </motion.p>
                   <motion.div
                     variants={childitem2}
                     className="rounded-2xl mt-6 w-full shadow-news-shadow overflow-x-auto"

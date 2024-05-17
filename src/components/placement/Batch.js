@@ -78,7 +78,7 @@ const Batch = ({ plyear }) => {
                   </motion.p>
                   <motion.div
                     variants={childitem2}
-                    className="rounded-2xl mt-6 w-full shadow-news-shadow md:overflow-x-scroll"
+                    className="rounded-2xl mt-6 w-full shadow-news-shadow overflow-x-auto"
                   >
                     <table className="table rounded-2xl w-full text-center">
                       <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
@@ -93,49 +93,49 @@ const Batch = ({ plyear }) => {
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             CSE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             ECE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             EE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             EIE
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             IT
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             ME
                           </th>
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                            className="px-3 py-4 shadow-inside-shadow border-r"
                           >
                             MCA
                           </th>
@@ -143,7 +143,7 @@ const Batch = ({ plyear }) => {
                             <th
                               scope="col"
                               colSpan={1}
-                              className="px-3 py-4 whitespace-nowrap shadow-inside-shadow border-r"
+                              className="px-3 py-4 shadow-inside-shadow border-r"
                             >
                               MBA
                             </th>
@@ -151,7 +151,7 @@ const Batch = ({ plyear }) => {
                           <th
                             scope="col"
                             colSpan={1}
-                            className="px-3 py-4 whitespace-nowrap rounded-tr-2xl shadow-inside-shadow border-r"
+                            className="px-3 py-4 rounded-tr-2xl shadow-inside-shadow border-r"
                           >
                             Total
                           </th>
@@ -163,33 +163,33 @@ const Batch = ({ plyear }) => {
                             <td className=" px-3 font-bold py-4 border-r">
                               {item.heading}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.cse}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.ece}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.ee}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.eie}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.it}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 border-r">
+                            <td className=" px-3 py-4 border-r">
                               {item.me}
                             </td>
-                            <td className="whitespace-nowrap px-2 py-4 border-r">
+                            <td className=" px-2 py-4 border-r">
                               {item.mca}
                             </td>
                             {plyear === "2022" ? (
-                              <td className="whitespace-nowrap px-2 py-4 border-r">
+                              <td className=" px-2 py-4 border-r">
                                 {item.mba}
                               </td>
                             ) : null}
-                            <td className="whitespace-nowrap px-2 py-4 border-r">
+                            <td className=" px-2 py-4 border-r">
                               {item.total}
                             </td>
                           </tr>

@@ -76,7 +76,127 @@ const Batch = ({ plyear }) => {
                     them and their performance in recruitment drives amply
                     demonstrate that.
                   </motion.p>
-                  
+                  <motion.div
+                    variants={childitem2}
+                    className="rounded-2xl mt-6 p-2 shadow-news-shadow overflow-x-auto"
+                  >
+                    <table className="table rounded-2xl text-center">
+                      <thead className="border-b llg:text-2xl rounded-t-2xl shadow-inside-shadow">
+                        <tr className="rounded-t-2xl bg-blue-950/20">
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-2 py-4 rounded-tl-2xl shadow-inside-shadow border-r"
+                          >
+                            Placement @ {plyear}
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            CSE
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            ECE
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            EE
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            EIE
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            IT
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            ME
+                          </th>
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 shadow-inside-shadow border-r"
+                          >
+                            MCA
+                          </th>
+                          {plyear === "2022" ? (
+                            <th
+                              scope="col"
+                              colSpan={1}
+                              className="px-3 py-4 shadow-inside-shadow border-r"
+                            >
+                              MBA
+                            </th>
+                          ) : null}
+                          <th
+                            scope="col"
+                            colSpan={1}
+                            className="px-3 py-4 rounded-tr-2xl shadow-inside-shadow border-r"
+                          >
+                            Total
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {placementitem.statistics.map((item, index1) => (
+                          <tr key={index1} className="border-b">
+                            <td className=" px-3 font-bold py-4 border-r">
+                              {item.heading}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.cse}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.ece}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.ee}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.eie}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.it}
+                            </td>
+                            <td className=" px-3 py-4 border-r">
+                              {item.me}
+                            </td>
+                            <td className=" px-2 py-4 border-r">
+                              {item.mca}
+                            </td>
+                            {plyear === "2022" ? (
+                              <td className=" px-2 py-4 border-r">
+                                {item.mba}
+                              </td>
+                            ) : null}
+                            <td className=" px-2 py-4 border-r">
+                              {item.total}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </motion.div>
                 </div>
               )}
             </div>

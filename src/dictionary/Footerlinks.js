@@ -95,7 +95,7 @@ export const admissionlinks = [
 export const contactlinks = [
     {
         name: "Admission Dept.",
-        link: "/contacts#depts",
+        link: "/contacts",
         target: "",
     },
     {
@@ -105,22 +105,22 @@ export const contactlinks = [
     },
     {
         name: "Academics & Exam",
-        link: "/contacts#depts",
+        link: "/contacts",
         target: "",
     },
     {
         name: "Admin Dept.",
-        link: "/contacts#depts",
+        link: "/contacts",
         target: "",
     },
     {
         name: "Placement Dept.",
-        link: "/contacts#placementdepts",
+        link: "/contacts",
         target: "",
     },
     {
         name: "Digital iON Zone",
-        link: "/contacts#ionzone",
+        link: "/contacts",
         target: "",
     },
     {

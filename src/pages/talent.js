@@ -50,7 +50,7 @@ const talent = () => {
       },
     },
   };
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = React.useState(0);
   return (
     <>
       <Head>

@@ -73,8 +73,8 @@ const Deptlinks = ({ links }) => {
                       heading === link.name ? "xll:hidden" : "hidden"
                     }`}
                   >
-                    {link.sublinks.map((slink) => (
-                      <Link href={slink.href}>
+                    {link.sublinks.map((slink,i) => (
+                      <Link key={i} href={slink.href}>
                         <div key={slink}>
                           <div>
                             <li className="py-2 pl-7 font-semibold">

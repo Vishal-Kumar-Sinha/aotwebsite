@@ -63,7 +63,7 @@ const Ongoing = () => {
                 <div className="px-6 pt-2 ml-10 w-fit">
                   <ul style={{ listStyleType: "disc" }}>
                     {item.data.map((eachdata, i) => (
-                      <motion.li variants={childitem}>
+                      <motion.li key={i} variants={childitem}>
                       {eachdata}
                     </motion.li>
                     ))}

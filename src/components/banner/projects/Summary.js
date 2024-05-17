@@ -94,7 +94,7 @@ const Summary = () => {
                   </thead>
                   <tbody>
                     {summerizeresearch.map((researchitem, index) => (
-                      <tr className="border-b">
+                      <tr key={index} className="border-b">
                         <td className="whitespace-nowrap px-2 font-bold py-4 border-r">
                           SDG{researchitem.id}
                         </td>

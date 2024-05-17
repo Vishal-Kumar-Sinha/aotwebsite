@@ -104,7 +104,7 @@ const Pgfees = () => {
                             </td>
                           </tr>
                         ) : (
-                          <tr className="border-t-[2px] border-solid border-gray-400">
+                          <tr key={index} className="border-t-[2px] border-solid border-gray-400">
                             <td className=" px-3 font-bold py-4 border-r text-left">
                               {fees.name}
                             </td>

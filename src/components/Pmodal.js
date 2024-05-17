@@ -118,7 +118,7 @@ const Pmodal = ({
                         }}
                       >
                         <Carousal autoSlide={true}>
-                          {[...slides.map((s) => <Image src={s} alt="" />)]}
+                          {[...slides.map((s,i) => <Image key={i} src={s} alt="" />)]}
                         </Carousal>
                       </motion.div>
                       <div>

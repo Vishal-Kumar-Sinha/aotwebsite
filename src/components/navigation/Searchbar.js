@@ -106,11 +106,8 @@ const Searchbar = () => {
                 <div>
                   {anslen !== 0 ? (
                     ans.map((r, i) => (
-                      <Link href={r.link} target={r.target}>
-                        <p
-                          className="my-2 pl-2 font-medium text-lg rounded-md hover:bg-gray-300/50 hover:text-accent transition-all duration-200 ease-in-out"
-                          key={i}
-                        >
+                      <Link key={i} href={r.link} target={r.target}>
+                        <p className="my-2 pl-2 font-medium text-lg rounded-md hover:bg-gray-300/50 hover:text-accent transition-all duration-200 ease-in-out">
                           {r.name}
                         </p>
                       </Link>

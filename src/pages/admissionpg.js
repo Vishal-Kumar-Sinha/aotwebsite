@@ -36,7 +36,7 @@ const admissionData = [
   },
 ];
 const admissionpg = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = React.useState(0);
   return (
     <>
       <Head>

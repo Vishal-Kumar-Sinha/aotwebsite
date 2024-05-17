@@ -52,8 +52,12 @@ const NavLinks = () => {
                           aria-hidden="true"
                           className="bg-white w-[25vw] tail border absolute rounded-sm top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32"
                         >
-                          {mysublinks.sublink.map((slink) => (
-                            <Link href={slink.link} target={slink.target}>
+                          {mysublinks.sublink.map((slink, i) => (
+                            <Link
+                              key={i}
+                              href={slink.link}
+                              target={slink.target}
+                            >
                               <li
                                 key={slink.name}
                                 className="px-3 head py-1 hover:text-primary m-1 text-sm text-gray-600 hover:bg-gray-200"
@@ -89,8 +93,8 @@ const NavLinks = () => {
                   <div className="w-4 h-4 left-3 absolute -mt-2 bg-white rotate-45"></div>
                 </div>
                 <div className="pt-1">
-                  {link.sublinks.map((slink) => (
-                    <Link href={slink.link}>
+                  {link.sublinks.map((slink, i) => (
+                    <Link key={i} href={slink.link}>
                       <li
                         key={slink.name}
                         className="font-semibold m-1 hover:text-primary px-3 py-1 hover:bg-gray-200"
@@ -159,8 +163,12 @@ const NavLinks = () => {
                                 : "hidden"
                             }`}
                           >
-                            {slinks.sublink.map((slink) => (
-                              <Link href={slink.link} target={slink.target}>
+                            {slinks.sublink.map((slink, i) => (
+                              <Link
+                                key={i}
+                                href={slink.link}
+                                target={slink.target}
+                              >
                                 <li
                                   key={slink.name}
                                   className="py-2 pl-14 pr-4"
@@ -189,14 +197,8 @@ const NavLinks = () => {
                     </div>
                   ))
                 : link.sublinks.map((slink) => (
-                    <Link href={slink.link}>
-                      <div key={slink.name}>
-                        <div>
-                          <li className="py-2 pl-7 font-semibold">
-                            {slink.name}
-                          </li>
-                        </div>
-                      </div>
+                    <Link key={slink.name} href={slink.link}>
+                      <li className="py-2 pl-7 font-semibold">{slink.name}</li>
                     </Link>
                   ))}
             </div>

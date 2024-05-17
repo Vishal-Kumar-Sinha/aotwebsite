@@ -168,7 +168,7 @@ const Coaching = () => {
                             </th>
                           </tr>
                           {btechcoachinglink.skill.map((coaching, index2) => (
-                            <tr className="border-b">
+                            <tr key={index2} className="border-b">
                               <td className=" px-2 font-bold py-4 border-r">
                                 {coaching.programme}
                               </td>
@@ -300,7 +300,7 @@ const Coaching = () => {
                     </thead>
                     <tbody>
                       {mcacoachinglinks.map((mcalink, index1) => (
-                        <tr className="border-b">
+                        <tr key={index1} className="border-b">
                           <td className=" px-2 font-bold py-4 border-r">
                             {mcalink.programme}
                           </td>

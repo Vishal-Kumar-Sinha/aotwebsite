@@ -100,7 +100,7 @@ export const contactlinks = [
     },
     {
         name: "Principal Office",
-        link: "/contacts#depts",
+        link: "/contacts",
         target: "",
     },
     {

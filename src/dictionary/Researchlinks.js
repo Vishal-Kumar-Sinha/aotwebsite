@@ -17,7 +17,7 @@ export const researchconnect = [
   {
     heading: "Library Access",
     description: "Avail access to the comprehensive AOT library",
-    icon: [<IoLibrarySharp className="ml-[7px]" />],
+    icon: <IoLibrarySharp className="ml-[7px]" />,
     className: "bg-white",
     link: "/library",
   },
@@ -25,7 +25,7 @@ export const researchconnect = [
     heading: "Intellectual Capital",
     description:
       "Engage the best student talent in India. Leverage the world-class faculty expertise across technology domains through research collaborations.",
-    icon: [<GiPiggyBank className="ml-[7px]" />],
+    icon: <GiPiggyBank className="ml-[7px]" />,
     className: "bg-white",
     link: "/research#partners",
   },
@@ -33,7 +33,7 @@ export const researchconnect = [
     heading: "Matchmaking",
     description:
       "Avail matchmaking support to map your requirement to available capability in AOT",
-    icon: [<SiMoleculer className="ml-[7px]" />],
+    icon: <SiMoleculer className="ml-[7px]" />,
     className: "bg-white",
     link: "/research#testimonials",
   },
@@ -41,7 +41,7 @@ export const researchconnect = [
     heading: "Exchange of Knowledge",
     description:
       "Leverage world-class educational programs for upskilling of your staff [Resident Members only]. Influence AOT research and education through your experts coming in as guest and visiting faculty.",
-    icon: [<FaGraduationCap className="ml-[7px]" />],
+    icon: <FaGraduationCap className="ml-[7px]" />,
     className: "bg-white",
     link: "/research#newsletters",
   },
@@ -49,7 +49,7 @@ export const researchconnect = [
     heading: "Handholding",
     description:
       "Avail hand-holding through the process of formalizing your engagements with various AOT offices, e.g. R&D, Educational Outreach",
-    icon: [<FaRegHandshake className="ml-[7px]" />],
+    icon: <FaRegHandshake className="ml-[7px]" />,
     className: "bg-white",
     link: "/research#researchlabs",
   },
@@ -57,7 +57,7 @@ export const researchconnect = [
     heading: "State of the art facilities",
     description:
       "Leverage high levels of government and donor support for translational research infrastructure. Avail streamlined access to AOT research infrastructure.",
-    icon: [<FaCity className="ml-[7px]" />],
+    icon: <FaCity className="ml-[7px]" />,
     className: "bg-white",
     link: "/student",
   },

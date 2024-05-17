@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { melinks } from "@/dictionary/MELinks";
 
-const menewsview = () => {
+const Menewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const menewsview = () => {
   );
 };
 
-export default menewsview;
+export default Menewsview;

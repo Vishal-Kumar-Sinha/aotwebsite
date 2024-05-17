@@ -8,7 +8,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { eelinks } from "@/dictionary/EELinks";
 
-const eenewsview = () => {
+const Eenewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -48,4 +48,4 @@ const eenewsview = () => {
   );
 };
 
-export default eenewsview;
+export default Eenewsview;

@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { eshlinks } from "@/dictionary/ESHLinks";
 
-const eshnewsview = () => {
+const Eshnewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const eshnewsview = () => {
   );
 };
 
-export default eshnewsview;
+export default Eshnewsview;

@@ -9,7 +9,7 @@ import Nav from "@/components/navigation/Nav";
 
 import { ugcourses } from "@/dictionary/Courseslinks";
 
-const ugprograms = () => {
+const Ugprograms = () => {
   return (
     <>
       <Head>
@@ -228,4 +228,4 @@ const ugprograms = () => {
   );
 };
 
-export default ugprograms;
+export default Ugprograms;

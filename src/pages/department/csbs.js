@@ -32,7 +32,7 @@ import { newslinks } from "@/dictionary/Newslinks";
 import placement1 from "@/assets/images/placement.png";
 import research1 from "@/assets/images/research.jpg";
 
-const csbs = () => {
+const Csbs = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -862,4 +862,4 @@ const csbs = () => {
     </>
   );
 };
-export default csbs;
+export default Csbs;

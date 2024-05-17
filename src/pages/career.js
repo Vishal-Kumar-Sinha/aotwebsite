@@ -12,7 +12,7 @@ import AnimatedTextWord from "@/components/AnimatedTextWord";
 
 import { careerbanner } from "@/dictionary/Bannerlist";
 
-const career = () => {
+const Career = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -254,4 +254,4 @@ const career = () => {
   );
 };
 
-export default career;
+export default Career;

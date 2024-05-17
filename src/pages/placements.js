@@ -10,7 +10,7 @@ import Banner from "@/components/banner/Banner";
 import { placementbanner } from "@/dictionary/Bannerlist";
 import Placementstatus from "@/components/Placementstatus";
 
-const placements = () => {
+const Placements = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -99,4 +99,4 @@ const placements = () => {
   );
 };
 
-export default placements;
+export default Placements;

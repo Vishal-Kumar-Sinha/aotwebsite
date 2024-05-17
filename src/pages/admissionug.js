@@ -14,33 +14,33 @@ import Admissiondocs from "@/components/admission/Admissiondocs";
 
 import { admissionbanner } from "@/dictionary/Bannerlist";
 
-const admissionData = [
+const AdmissionData = [
   {
     title: "Admission Procedure",
-    info: [<Ugprocedure />],
+    info: <Ugprocedure />,
   },
   {
     title: "B.Tech Fees Structure",
-    info: [<Ugfees />],
+    info: <Ugfees />,
   },
   {
     title: "B.Tech (Lateral) Fees Structure",
-    info: [<Uglateralfees />],
+    info: <Uglateralfees />,
   },
   {
     title: "Fees Payment Rules",
-    info: [<Rulesfees />],
+    info: <Rulesfees />,
   },
   {
     title: "Financial Aid & Support",
-    info: [<Support />],
+    info: <Support />,
   },
   {
     title: "Documents For Admission",
-    info: [<Admissiondocs />],
+    info: <Admissiondocs />,
   },
 ];
-const admissionug = () => {
+const Admissionug = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -83,9 +83,9 @@ const admissionug = () => {
             >
               {admissionData.map((item, itemIndex) => {
                 return (
-                  <motion.span variants={childitem}>
+                  <motion.span key={itemIndex * 100} variants={childitem}>
                     <motion.button
-                      key={itemIndex * 100}
+                      
                       whileHover={{ scale: 0.85 }}
                       className={`${
                         index === itemIndex &&
@@ -110,4 +110,4 @@ const admissionug = () => {
   );
 };
 
-export default admissionug;
+export default Admissionug;

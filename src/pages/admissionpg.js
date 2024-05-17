@@ -16,26 +16,26 @@ import { admissionbanner } from "@/dictionary/Bannerlist";
 const admissionData = [
   {
     title: "Admission Procedure",
-    info: [<Pgprocedure />],
+    info: <Pgprocedure />,
   },
   {
     title: "MCA Fees Structure",
-    info: [<Pgfees />],
+    info: <Pgfees />,
   },
   {
     title: "Fees Payment Rules",
-    info: [<Rulesfees />],
+    info: <Rulesfees />,
   },
   {
     title: "Financial Aid & Support",
-    info: [<Support />],
+    info: <Support />,
   },
   {
     title: "Documents For Admission",
-    info: [<Admissiondocs />],
+    info: <Admissiondocs />,
   },
 ];
-const admissionpg = () => {
+const Admissionpg = () => {
   const [index, setIndex] = React.useState(0);
   return (
     <>
@@ -74,4 +74,4 @@ const admissionpg = () => {
   )
 }
 
-export default admissionpg
+export default Admissionpg

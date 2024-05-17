@@ -11,7 +11,7 @@ import AnimatedTextWord from "@/components/AnimatedTextWord";
 import { facultybanner } from "@/dictionary/Bannerlist";
 import { facultylinks } from "@/dictionary/Facultylinks";
 
-const faculty = () => {
+const Faculty = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -216,4 +216,4 @@ const faculty = () => {
   );
 };
 
-export default faculty;
+export default Faculty;

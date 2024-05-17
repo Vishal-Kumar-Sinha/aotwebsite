@@ -9,7 +9,7 @@ import Banner from "@/components/banner/Banner";
 
 import { acuitybanner } from "@/dictionary/Bannerlist";
 
-const acuity = () => {
+const Acuity = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -282,4 +282,4 @@ const acuity = () => {
   );
 };
 
-export default acuity;
+export default Acuity;

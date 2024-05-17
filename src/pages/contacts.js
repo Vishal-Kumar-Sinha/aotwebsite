@@ -10,7 +10,7 @@ import Contactslider from "@/components/banner/Contactslider";
 
 import { contactbanner } from "@/dictionary/Contactlinks";
 
-const contacts = () => {
+const Contacts = () => {
   const parent = {
     hidden: { opacity: 0, rotateY: 180 },
     show: {
@@ -405,4 +405,4 @@ const contacts = () => {
   );
 };
 
-export default contacts;
+export default Contacts;

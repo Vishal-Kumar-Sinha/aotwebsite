@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { calinks } from "@/dictionary/CALinks";
 
-const canewsview = () => {
+const Canewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const canewsview = () => {
   );
 };
 
-export default canewsview;
+export default Canewsview;

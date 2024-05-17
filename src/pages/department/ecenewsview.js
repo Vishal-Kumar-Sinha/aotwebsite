@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { ecelinks } from "@/dictionary/ECELinks";
 
-const ecenewsview = () => {
+const Ecenewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const ecenewsview = () => {
   );
 };
 
-export default ecenewsview;
+export default Ecenewsview;

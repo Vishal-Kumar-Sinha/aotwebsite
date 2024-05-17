@@ -26,7 +26,7 @@ import {
   testimoniallist,
 } from "@/dictionary/Researchlinks";
 
-const research = () => {
+const Research = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -511,4 +511,4 @@ const research = () => {
   );
 };
 
-export default research;
+export default Research;

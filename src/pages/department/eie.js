@@ -31,15 +31,8 @@ import { newslinks } from "@/dictionary/Newslinks";
 //import images
 import placement1 from "@/assets/images/placement.png";
 import research1 from "@/assets/images/research.jpg";
-import a1 from "@/assets/images/accreditation/capgemini.png";
-import a2 from "@/assets/images/accreditation/cisco.png";
-import a3 from "@/assets/images/accreditation/cyient.png";
-import a4 from "@/assets/images/accreditation/google.png";
-import a5 from "@/assets/images/accreditation/tcs.png";
-import a6 from "@/assets/images/accreditation/techmahindra.png";
-import a7 from "@/assets/images/accreditation/wipro.png";
 
-const eie = () => {
+const Eie = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -869,4 +862,4 @@ const eie = () => {
     </>
   );
 };
-export default eie;
+export default Eie;

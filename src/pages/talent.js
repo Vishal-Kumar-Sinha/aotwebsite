@@ -15,19 +15,20 @@ import { talentbanner } from "@/dictionary/Bannerlist";
 const talentData = [
   {
     title: " Talent Transformation ",
-    info: [<Coaching />],
+    info: <Coaching />,
   },
   {
     title: "Training for GATE",
-    info: [<Gate />],
+    info: <Gate />,
   },
   {
     title: "Summer Internship",
-    info: [<Summerinternship />],
+    info: <Summerinternship />,
   },
 ];
 
-const talent = () => {
+const Talent = () => {
+  const [index, setIndex] = useState(0);
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -50,7 +51,6 @@ const talent = () => {
       },
     },
   };
-  const [index, setIndex] = React.useState(0);
   return (
     <>
       <Head>
@@ -68,11 +68,9 @@ const talent = () => {
               whileInView="show"
               className="flex flex-wrap  mx-auto xll:mx-0 mb-10 mt-5 justify-center"
             >
-              {talentData.map((item, itemIndex) => {
-                return (
-                  <motion.span variants={childitem}>
+              {talentData.map((item, itemIndex) => (
+                  <motion.span key={itemIndex} variants={childitem}>
                     <motion.button
-                      key={itemIndex}
                       whileHover={{ scale: 0.85 }}
                       className={`${
                         index === itemIndex &&
@@ -86,8 +84,7 @@ const talent = () => {
                       {item.title}
                     </motion.button>
                   </motion.span>
-                );
-              })}
+                ))}
             </motion.div>
           </AnimatePresence>
 
@@ -98,4 +95,4 @@ const talent = () => {
   );
 };
 
-export default talent;
+export default Talent;

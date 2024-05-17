@@ -9,7 +9,7 @@ import Nav from "@/components/navigation/Nav";
 import { eventlinks } from "@/dictionary/EventLinks";
 import Eventcard from "@/components/banner/Eventcard";
 
-const events = () => {
+const Events = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -62,4 +62,4 @@ const events = () => {
   );
 };
 
-export default events;
+export default Events;

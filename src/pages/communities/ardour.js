@@ -9,7 +9,7 @@ import Banner from "@/components/banner/Banner";
 
 import { ardourbanner } from "@/dictionary/Bannerlist";
 
-const ardour = () => {
+const Ardour = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -170,4 +170,4 @@ const ardour = () => {
   );
 };
 
-export default ardour;
+export default Ardour;

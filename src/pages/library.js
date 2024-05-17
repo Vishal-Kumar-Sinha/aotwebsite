@@ -10,7 +10,7 @@ import Banner from "@/components/banner/Banner";
 
 import { librarybanner } from "@/dictionary/Bannerlist";
 
-const library = () => {
+const Library = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -164,4 +164,4 @@ const library = () => {
   );
 };
 
-export default library;
+export default Library;

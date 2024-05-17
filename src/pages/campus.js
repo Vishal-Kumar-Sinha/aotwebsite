@@ -9,7 +9,7 @@ import Banner from "@/components/banner/Banner";
 
 import { homebanner } from "@/dictionary/Bannerlist";
 
-const student = () => {
+const Campus = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -351,4 +351,4 @@ const student = () => {
   );
 };
 
-export default student;
+export default Campus;

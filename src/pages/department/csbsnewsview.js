@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { csbslinks } from "@/dictionary/CSBSLinks";
 
-const csbsnewsview = () => {
+const Csbsnewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const csbsnewsview = () => {
   );
 };
 
-export default csbsnewsview;
+export default Csbsnewsview;

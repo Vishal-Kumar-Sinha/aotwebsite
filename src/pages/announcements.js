@@ -9,7 +9,7 @@ import Announcementcard from "@/components/banner/Announcementcard";
 
 import { announcementlinks } from "@/dictionary/Announcementlinks";
 
-const announcements = () => {
+const Announcements = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -48,8 +48,8 @@ const announcements = () => {
             whileInView="show"
             className="flex flex-wrap rounded-2xl p-4 w-full"
           >
-            {announcementlinks.map((link) => (
-              <motion.div variants={childitem} className="m-2 w-full">
+            {announcementlinks.map((link,i) => (
+              <motion.div key={i} variants={childitem} className="m-2 w-full">
                 <Announcementcard props={link} />
               </motion.div>
             ))}
@@ -60,4 +60,4 @@ const announcements = () => {
   );
 };
 
-export default announcements;
+export default Announcements;

@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { cselinks } from "@/dictionary/CSELinks";
 
-const csenewsview = () => {
+const Csenewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const csenewsview = () => {
   );
 };
 
-export default csenewsview;
+export default Csenewsview;

@@ -15,7 +15,7 @@ import {
   btech75list,
 } from "@/dictionary/Campuslist";
 
-const student = () => {
+const Student = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -553,4 +553,4 @@ const student = () => {
   );
 };
 
-export default student;
+export default Student;

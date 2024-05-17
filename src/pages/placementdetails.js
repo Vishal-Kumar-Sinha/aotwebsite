@@ -7,7 +7,7 @@ import Batch from "@/components/placement/Batch";
 import Recruiters from "@/components/placement/Recruiters";
 import Placedstudents from "@/components/placement/Placedstudents";
 
-const placementdetails = () => {
+const Placementdetails = () => {
   const parent = {
     hidden: { opacity: 0 },
     show: {
@@ -47,15 +47,15 @@ const placementdetails = () => {
   const placementData = [
     {
       title: `Placement Batch @ ${plyear}`,
-      info: [<Batch plyear={plyear} />],
+      info: <Batch plyear={plyear} />,
     },
     {
       title: `Valued Recruiters @ ${plyear}`,
-      info: [<Recruiters plyear={plyear} />],
+      info: <Recruiters plyear={plyear} />,
     },
     {
       title: `Placed Students @ ${plyear}`,
-      info: [<Placedstudents plyear={plyear} />],
+      info: <Placedstudents plyear={plyear} />,
     },
   ];
   return (
@@ -74,26 +74,23 @@ const placementdetails = () => {
               whileInView="show"
               className="flex flex-wrap  mx-auto xll:mx-0 mb-10 mt-5 justify-center"
             >
-              {placementData.map((item, itemIndex) => {
-                return (
-                  <motion.span variants={childitem}>
-                    <motion.button
-                      key={itemIndex}
-                      whileHover={{ scale: 0.85 }}
-                      className={`${
-                        index === itemIndex &&
-                        "!scale-[0.85] !border-slate-600 border-2 border-transparent font-bold !text-black !bg-white !shadow-outside-shadow"
-                      } bg-slate-600 rounded-full px-4 py-2 xll:mx-5 my-2 xl:mx-3 text-white shadow-inside-shadow cursor-pointer border-transparent capitalize xl:text-lg`}
-                      onClick={() => setIndex(itemIndex)}
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ ease: "easeIn", duration: 0.3 }}
-                    >
-                      {item.title}
-                    </motion.button>
-                  </motion.span>
-                );
-              })}
+              {placementData.map((item, itemIndex) => (
+                <motion.span key={itemIndex} variants={childitem}>
+                  <motion.button
+                    whileHover={{ scale: 0.85 }}
+                    className={`${
+                      index === itemIndex &&
+                      "!scale-[0.85] !border-slate-600 border-2 border-transparent font-bold !text-black !bg-white !shadow-outside-shadow"
+                    } bg-slate-600 rounded-full px-4 py-2 xll:mx-5 my-2 xl:mx-3 text-white shadow-inside-shadow cursor-pointer border-transparent capitalize xl:text-lg`}
+                    onClick={() => setIndex(itemIndex)}
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ ease: "easeIn", duration: 0.3 }}
+                  >
+                    {item.title}
+                  </motion.button>
+                </motion.span>
+              ))}
             </motion.div>
           </AnimatePresence>
 
@@ -104,4 +101,4 @@ const placementdetails = () => {
   );
 };
 
-export default placementdetails;
+export default Placementdetails;

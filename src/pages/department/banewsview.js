@@ -9,7 +9,7 @@ import Deptnav from "@/components/navigation/Deptnav";
 
 import { balinks } from "@/dictionary/BALinks";
 
-const banewsview = () => {
+const Banewsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -74,4 +74,4 @@ const banewsview = () => {
   );
 };
 
-export default banewsview;
+export default Banewsview;

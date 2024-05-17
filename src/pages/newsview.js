@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Nav from "@/components/navigation/Nav";
 
-const newsview = () => {
+const Newsview = () => {
   const [ntitle, setntitle] = useState("");
   const [imgLink, setimgLink] = useState("");
   const [ndesc, setndesc] = useState("");
@@ -75,4 +75,4 @@ const newsview = () => {
   );
 };
 
-export default newsview;
+export default Newsview;

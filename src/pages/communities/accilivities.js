@@ -9,7 +9,7 @@ import Banner from "@/components/banner/Banner";
 
 import { accilivitiesbanner } from "@/dictionary/Bannerlist";
 
-const accilivities = () => {
+const Accilivities = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -171,4 +171,4 @@ const accilivities = () => {
   );
 };
 
-export default accilivities;
+export default Accilivities;

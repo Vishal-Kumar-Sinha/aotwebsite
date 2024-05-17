@@ -9,7 +9,7 @@ import Nav from "@/components/navigation/Nav";
 
 import { pgcourses } from "@/dictionary/Courseslinks";
 
-const pgprograms = () => {
+const Pgprograms = () => {
   return (
     <>
       <Head>
@@ -198,4 +198,4 @@ const pgprograms = () => {
   );
 };
 
-export default pgprograms;
+export default Pgprograms;

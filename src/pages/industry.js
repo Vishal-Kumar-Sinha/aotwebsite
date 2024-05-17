@@ -15,23 +15,23 @@ import { industrybanner } from "@/dictionary/Bannerlist";
 const admissionData = [
   {
     title: "Industry 4.0 @AOT",
-    info: [<Industry4 />],
+    info: <Industry4 />,
   },
   {
     title: "Industry 4.0 Centres @AOT",
-    info: [<Icentres />],
+    info: <Icentres />,
   },
   {
     title: "Wipro MTLC",
-    info: [<Wmtlc />],
+    info: <Wmtlc />,
   },
   {
     title: "Google Innovation Centre",
-    info: [<Googleic />],
+    info: <Googleic />,
   },
 ];
 
-const industry = () => {
+const Industry = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -72,11 +72,9 @@ const industry = () => {
               whileInView="show"
               className="flex flex-wrap mx-auto xll:mx-0 mb-10 mt-5 justify-center"
             >
-              {admissionData.map((item, itemIndex) => {
-                return (
-                  <motion.span variants={childitem}>
+              {admissionData.map((item, itemIndex) => (
+                  <motion.span key={itemIndex * 100} variants={childitem}>
                     <motion.button
-                      key={itemIndex * 100}
                       whileHover={{ scale: 0.85 }}
                       className={`${
                         index === itemIndex &&
@@ -90,8 +88,7 @@ const industry = () => {
                       {item.title}
                     </motion.button>
                   </motion.span>
-                );
-              })}
+                ))}
             </motion.div>
           </AnimatePresence>
           <div key={index}>{admissionData[index].info}</div>
@@ -101,4 +98,4 @@ const industry = () => {
   );
 };
 
-export default industry;
+export default Industry;

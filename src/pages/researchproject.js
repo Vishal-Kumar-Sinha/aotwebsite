@@ -8,19 +8,18 @@ import Nav from "@/components/navigation/Nav";
 import Ongoing from "@/components/banner/projects/Ongoing";
 import Summary from "@/components/banner/projects/Summary";
 
-
 const researchprojectData = [
   {
     title: " Ongoing Projects ",
-    info: [<Ongoing />],
+    info: <Ongoing />,
   },
   {
     title: "Summary",
-    info: [<Summary />],
+    info: <Summary />,
   },
 ];
 
-const researchproject = () => {
+const Researchproject = () => {
   const parent = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -54,10 +53,10 @@ const researchproject = () => {
       <main className="w-full mb-10 min-h-[80vh] flex flex-col items-center justify-center smmy:pt-[4.2rem] lg:pt-[4.7rem] llg:pt-[4.5rem]">
         <Layout className="!pt-8">
           <Layout className="!pt-8">
-          <AnimatedText
-            text="Ongoing Projects and Consultancy"
-            className="!text-4xl text-center font-serif !text-[hsl(232,47%,28%)]"
-          />
+            <AnimatedText
+              text="Ongoing Projects and Consultancy"
+              className="!text-4xl text-center font-serif !text-[hsl(232,47%,28%)]"
+            />
             <AnimatePresence>
               <motion.div
                 variants={parent}
@@ -65,11 +64,9 @@ const researchproject = () => {
                 whileInView="show"
                 className="flex flex-wrap  mx-auto xll:mx-0 mb-10 mt-5 justify-center"
               >
-                {researchprojectData.map((item, itemIndex) => {
-                  return (
-                    <motion.span variants={childitem}>
+                {researchprojectData.map((item, itemIndex) => (
+                    <motion.span key={itemIndex} variants={childitem}>
                       <motion.button
-                        key={itemIndex}
                         whileHover={{ scale: 0.85 }}
                         className={`${
                           index === itemIndex &&
@@ -83,8 +80,7 @@ const researchproject = () => {
                         {item.title}
                       </motion.button>
                     </motion.span>
-                  );
-                })}
+                  ))}
               </motion.div>
             </AnimatePresence>
 
@@ -96,4 +92,4 @@ const researchproject = () => {
   );
 };
 
-export default researchproject;
+export default Researchproject;

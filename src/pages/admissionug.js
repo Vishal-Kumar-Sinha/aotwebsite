@@ -14,7 +14,7 @@ import Admissiondocs from "@/components/admission/Admissiondocs";
 
 import { admissionbanner } from "@/dictionary/Bannerlist";
 
-const AdmissionData = [
+const admissionData = [
   {
     title: "Admission Procedure",
     info: <Ugprocedure />,

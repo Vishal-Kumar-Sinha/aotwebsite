@@ -16,7 +16,7 @@ const Searchbar = () => {
       sort: true,
     });
     let item = event.target.value;
-    console.log(item);
+    //console.log(item);
     while (item === null || item === "") {
       setans(null);
       return;
@@ -24,7 +24,7 @@ const Searchbar = () => {
     const result = searcher.search(item);
     setanslen(result.length);
     setans(result);
-    console.log(result);
+    //console.log(result);
   };
   const parent = {
     hidden: { opacity: 0 },

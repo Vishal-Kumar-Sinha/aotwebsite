@@ -33,7 +33,7 @@ const Newsview = () => {
         <meta name="description" content="any description" />
       </Head>
       <Nav />
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center smmy:pt-[4.2rem] xl:pt-[4.7rem] xll:pt-[4.5rem]">
         <Layout>
           <AnimatePresence>
             <AnimatedText text={ntitle} />

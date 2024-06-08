@@ -58,34 +58,7 @@ const HeaderSlider = ({ sliderItems }) => {
                 />
               </div>
             </div>
-            <div className="absolute right-[10%] top-[15%] lg:hidden">
-              <div className="shadow-cube-shadow h-16 w-8 rounded-3xl ml-6 bg-white/30 backdrop-blur-md border-[4px] border-orange-500">
-                <motion.span
-                  initial={{ y: 0, scale: 0.2 }}
-                  whileInView={{
-                    y: 36,
-                    scale: 1,
-                    transition: {
-                      ease: "linear",
-                      delay: 0.1,
-                      duration: 2,
-                      repeat: "infinity",
-                    },
-                  }}
-                  className="w-3 absolute h-3 rounded-full left-1.5 top-1 bg-blue-700"
-                ></motion.span>
-              </div>
-              <motion.div initial={{ scale: 0 }}
-                  whileInView={{
-                    scale: 1,
-                    transition: {
-                      ease: "linear",
-                      delay: 0.1,
-                      duration: 2,
-                      repeat: "infinity",
-                    },
-                  }} className=" bg-transparent text-center font-extrabold">Scroll down</motion.div>
-            </div>
+            
           </div>
         </div>
       ))}
